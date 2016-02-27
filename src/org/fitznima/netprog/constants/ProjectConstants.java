@@ -52,4 +52,6 @@ public class ProjectConstants {
 
     public static String PENDING_FLAG ="Waiting";
 
+    public static String FAIL ="FAIL";
+
 }

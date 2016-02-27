@@ -12,8 +12,8 @@ lib = $(projpath)/lib/java-getopt-1.0.14.jar
 
 sourcefiles = \
 $(projpath)/Server.java \
-$(projpath)/Client.java \
-$(projpath)/main/runProjectManager.java\
+#$(projpath)/Client.java \
+#$(projpath)/main/runProjectManager.java\
 
 classfiles  = $(sourcefiles:.java=.class)
 
