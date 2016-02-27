@@ -8,7 +8,7 @@
 
 shopt -s nocasematch #force case-insensitive matches
 PROJ_PATH="org/fitznima/netprog"
-MAIN_PATH=.:$PROJ_PATH/:$PROJ_PATH"/main/"
+MAIN_PATH=.:$PROJ_PATH/:$PROJ_PATH"/"
 LIB_PATH=$PROJ_PATH"/lib/java-getopt-1.0.14.jar:"$PROJ_PATH"/lib/sqlite-jdbc-3.8.11.2.jar"
 
 DB_PATH=$PROJ_PATH"/data/projManagement.db"

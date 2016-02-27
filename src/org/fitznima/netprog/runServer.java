@@ -70,14 +70,14 @@ public class runServer {
                     out = new BufferedWriter(new OutputStreamWriter(sock.getOutputStream(), "latin1"));
 
 
-                    for (int k = 0; k < 1; k++) {
-                        if ((input = reader.readLine()) == null) break;
+                    for (int k = 0; k < 3; k++) {
+                        if ((input = reader.readLine()) == null) {break;}
                         message = input;
 
                         //new project definition
                         if (message.contains(ProjectConstants.PROJECT_DEFINITION)) {
                             String result = ProcessNewProject.addNewProject(message, dbPath);
-                            out.write(result);
+                            out.write(result +"\n");
                             out.flush();
                         }
 //
@@ -106,11 +106,9 @@ public class runServer {
                             out.flush();
                         }
 
-                        if(connection!=null)
-                            connection.close();
                     }
-
                     sock.close();
+
                 }
             } catch (IOException e) {
                 System.out.println(e.getMessage());

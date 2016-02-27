@@ -49,7 +49,8 @@ public class ProcessGetProject {
                 }
                 return msg;
             } catch (Exception ex) {
-
+                System.out.println(ex.getMessage());
+                ex.printStackTrace();
             }
         }
         return ProjectConstants.FAIL +";" + message;

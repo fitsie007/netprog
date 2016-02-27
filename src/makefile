@@ -11,7 +11,7 @@ projpath = org/fitznima/netprog
 lib = $(projpath)/lib/java-getopt-1.0.14.jar
 
 sourcefiles = \
-$(projpath)/Server.java \
+$(projpath)/runServer.java \
 
 
 classfiles  = $(sourcefiles:.java=.class)
@@ -23,4 +23,4 @@ all: $(classfiles)
 %.class: %.java
 	javac -d . -classpath .:$(lib) $<
 clean:
-	rm -f $(projpath)/*.class $(projpath)/main/*.class
+	rm -f $(projpath)/*.class $(projpath)/data/*.db
