@@ -9,6 +9,7 @@ import java.sql.DriverManager;
  */
 public class DBManager {
     private String dbPath;
+
     public DBManager(String dbPath){
         this.dbPath = dbPath;
     }
