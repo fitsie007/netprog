@@ -1,5 +1,5 @@
 # netprog
-Network Programming (CSE5232) Project
+### Network Programming (CSE5232) Project
 This project features a server that stores in a sqlite database the set of tasks associated with projects. 
 Each task is associated with a start and an end time, as well as a responsible person. 
 The server marks as expired the tasks immediately after they were completed. 
