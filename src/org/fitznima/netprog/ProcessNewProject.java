@@ -43,7 +43,7 @@ public class ProcessNewProject {
                     stmt.executeUpdate(sql); //save task to database
                 }
                 connection.close();
-                return ProjectConstants.OK + ";" + messageParts[0] + "\n";
+                return ProjectConstants.OK + ";" + messageParts[0];
 
             }
         } catch (Exception ex) {

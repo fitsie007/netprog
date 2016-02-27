@@ -102,7 +102,7 @@ public class runServer {
                             out.flush();
                         }
                         else{
-                            out.write(ProjectConstants.FAIL +"; " +input +'\n');
+                            out.write(ProjectConstants.FAIL +"; " +message +'\n');
                             out.flush();
                         }
 
