@@ -5,8 +5,14 @@ import java.sql.Connection;
 import java.sql.Statement;
 
 /**
- * Created by FitzRoi on 2/27/16.
+ * Authors: Fitzroy Nembhard & Nima Agli
+ * Date: 2/26/2016
+ * Professor Marius Silaghi
+ * Network Programming CSE5232
+ *
+ * This class processes the TAKE command
  */
+
 public class ProcessTakeCommand {
     public static String take(String message, String dbPath, String IP, int port) {
         String messageParts[] = message.split(";");

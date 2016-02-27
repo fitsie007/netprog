@@ -1,7 +1,12 @@
 package org.fitznima.netprog;
 
 /**
- * Created by FitzRoi on 2/26/16.
+ * Authors: Fitzroy Nembhard & Nima Agli
+ * Date: 2/26/2016
+ * Professor Marius Silaghi
+ * Network Programming CSE5232
+ *
+ * This class allows us to create a task as an object
  */
 public class Task {
     private String name;

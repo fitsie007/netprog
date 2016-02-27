@@ -6,8 +6,14 @@ import java.sql.ResultSet;
 import java.sql.Statement;
 
 /**
- * Created by FitzRoi on 2/27/16.
+ * Authors: Fitzroy Nembhard & Nima Agli
+ * Date: 2/26/2016
+ * Professor Marius Silaghi
+ * Network Programming CSE5232
+ *
+ * This class processes the GET_PROJECT command
  */
+
 public class ProcessGetProject {
     public static String getProject(String message, String dbPath) {
         String messageParts[] = message.split(";");

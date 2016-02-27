@@ -5,13 +5,18 @@ import java.sql.Connection;
 import java.sql.Statement;
 
 /**
- * Created by FitzRoi on 2/27/16.
+ * Authors: Fitzroy Nembhard & Nima Agli
+ * Date: 2/26/2016
+ * Professor Marius Silaghi
+ * Network Programming CSE5232
+ *
+ * This class processes a new project and stores the data in a database
  */
+
 public class ProcessNewProject {
     public static String addNewProject(String message, String dbPath) {
         String messageParts[] = message.split(";");
         String project = messageParts[0].split(":")[1];
-//                            System.out.print(project);
         try {
             DBManager dbManager = new DBManager(dbPath);
             Connection connection = dbManager.connectToDB();
@@ -24,10 +29,9 @@ public class ProcessNewProject {
 
             if (messageParts[1].contains(ProjectConstants.TASK_BEGIN)) {
                 int numTasks = Integer.parseInt(messageParts[1].split(":")[1]);
-//                                System.out.println("\n" + numTasks);
+
                 for (int i = 2; i < numTasks * 3; i += 3) {
                     Task task = new Task(messageParts[i], messageParts[i + 1], messageParts[i + 2]);
-//                                    tasks.add(task);
                     connection = dbManager.connectToDB();
                     stmt = connection.createStatement();
                     sql = "INSERT INTO " + ProjectConstants.TASKS_TABLE +

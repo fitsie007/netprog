@@ -1,8 +1,14 @@
 package org.fitznima.netprog.constants;
 
 /**
- * Created by FitzRoi on 2/26/16.
+ * Authors: Fitzroy Nembhard & Nima Agli
+ * Date: 2/26/2016
+ * Professor Marius Silaghi
+ * Network Programming CSE5232
+ *
+ * This class stores the messages and constants used in the program
  */
+
 public class ProjectConstants {
     public static String host="localhost";
     public static String CREATE_PROJECT_TABLE_SQL="CREATE TABLE PROJECTS " +

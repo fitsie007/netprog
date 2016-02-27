@@ -5,7 +5,12 @@ import java.sql.Connection;
 import java.sql.DriverManager;
 
 /**
- * Created by FitzRoi on 2/26/16.
+ * Authors: Fitzroy Nembhard & Nima Agli
+ * Date: 2/26/2016
+ * Professor Marius Silaghi
+ * Network Programming CSE5232
+ *
+ * This class provides SQLite Database Management
  */
 public class DBManager {
     private String dbPath;
@@ -14,6 +19,10 @@ public class DBManager {
         this.dbPath = dbPath;
     }
 
+    /**
+     * This method attempts to connect to the database selected
+     * @return a connection to the database
+     */
     public Connection connectToDB(){
         Connection c = null;
         try {
