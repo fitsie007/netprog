@@ -38,11 +38,12 @@ public class ProcessGetProjects {
                 connection.close();
                 return msg;
 
-            } catch (Exception ex) {
-
+            } catch (Exception e) {
+                System.out.println(e.getMessage());
+                e.printStackTrace();
             }
         }
-        return ProjectConstants.FAIL;
+        return ProjectConstants.FAIL +";" + message;
     }
 
 }

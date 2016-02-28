@@ -48,9 +48,9 @@ public class ProcessGetProject {
 
                 }
                 return msg;
-            } catch (Exception ex) {
-                System.out.println(ex.getMessage());
-                ex.printStackTrace();
+            } catch (Exception e) {
+                System.out.println(e.getMessage());
+                e.printStackTrace();
             }
         }
         return ProjectConstants.FAIL +";" + message;

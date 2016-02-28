@@ -20,7 +20,7 @@ public class DBManager {
     }
 
     /**
-     * This method attempts to connect to the database selected
+     * This method attempts to connect to the SQLite database selected
      * @return a connection to the database
      */
     public Connection connectToDB(){

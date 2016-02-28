@@ -28,10 +28,9 @@ public class runServer {
         Statement stmt = null;
         BufferedWriter out;
         BufferedReader reader;
-        String input;
         String message = "";
 
-
+        //use GNU Java GetOpt to process command line options
         Getopt g = new Getopt("server", args, "p:d:");
         g.setOpterr(false);
 
@@ -45,6 +44,7 @@ public class runServer {
                     break;
             }
 
+        //if database path and port provided
         if (dbPath != null && port != 0) {
             DBManager dbManager = new DBManager(dbPath);
             try {
@@ -61,7 +61,7 @@ public class runServer {
                 }
 
                 ServerSocket server_sock = new ServerSocket(port, 5);
-                System.out.print("Server started on port: " +port);
+                System.out.print("Server started on port: " + port);
 
                 for (; ; ) {
 
@@ -69,45 +69,42 @@ public class runServer {
                     reader = new BufferedReader(new InputStreamReader(sock.getInputStream(), "latin1"));
                     out = new BufferedWriter(new OutputStreamWriter(sock.getOutputStream(), "latin1"));
 
+                    while ((message = reader.readLine()) != null) {
 
-                    for (int k = 0; k < 3; k++) {
-                        if ((input = reader.readLine()) == null) {break;}
-                        message = input;
 
                         //new project definition
                         if (message.contains(ProjectConstants.PROJECT_DEFINITION)) {
                             String result = ProcessNewProject.addNewProject(message, dbPath);
-                            out.write(result +"\n");
+                            out.write(result + "\n");
                             out.flush();
                         }
 //
                         //take project command
                         else if (message.contains(ProjectConstants.TAKE_COMMAND)) {
                             String result = ProcessTakeCommand.take(message, dbPath, server_sock.getInetAddress().getHostAddress(), port);
-                            out.write(result +"\n");
+                            out.write(result + "\n");
                             out.flush();
                         }
 
                         //get projects command
                         else if (message.contains(ProjectConstants.GET_PROJECTS_COMMAND)) {
                             String result = ProcessGetProjects.getProjects(message, dbPath);
-                            out.write(result +"\n");
+                            out.write(result + "\n");
                             out.flush();
                         }
 
                         //get project command
                         else if (message.contains(ProjectConstants.GET_PROJECT_COMMAND)) {
                             String result = ProcessGetProject.getProject(message, dbPath);
-                            out.write(result +'\n');
+                            out.write(result + '\n');
                             out.flush();
-                        }
-                        else{
-                            out.write(ProjectConstants.FAIL +"; " +message +'\n');
+                        } else {
+                            out.write(ProjectConstants.FAIL + "; " + message + '\n');
                             out.flush();
                         }
 
+//                    sock.close(); //don't close the socket--> expect infinite messages
                     }
-                    sock.close();
 
                 }
             } catch (IOException e) {
