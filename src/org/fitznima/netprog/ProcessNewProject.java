@@ -18,7 +18,7 @@ import java.sql.Statement;
 public class ProcessNewProject {
     /**
      * This method adds a new project and a list of tasks to the database
-     * @param message teh PROJECT_DEFINITION command string
+     * @param message the PROJECT_DEFINITION command string
      * @param dbPath the path to the database
      * @return a string specifying success (OK) if command is valid and successful or otherwise (FAIL)
      */

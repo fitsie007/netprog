@@ -45,7 +45,7 @@ public class Util {
      * This method formats a date so that it can be parsed by simpleDateFormat
      * and used for comparison
      * @param dateStr the date-string to parse
-     * @return
+     * @return a reformatted date that is parsable by simpleDateFormat
      */
     public static String formatDate(String dateStr){
         Pattern datePattern;

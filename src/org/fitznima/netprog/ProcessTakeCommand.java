@@ -41,8 +41,9 @@ public class ProcessTakeCommand {
 
 
                 }
-            } catch (Exception ex) {
-
+            } catch (Exception e) {
+                System.out.println(e.getMessage());
+                e.printStackTrace();
             }
         }
         return ProjectConstants.FAIL +";" + message;
