@@ -15,6 +15,12 @@ import java.sql.Statement;
  */
 
 public class ProcessGetProjects {
+    /**
+     * This method returns a the total number of projects and a list of all the projects
+     * @param message the GET_PROJECTS command string
+     * @param dbPath the path to the database
+     * @return a string specifying success (OK) if command is valid or otherwise (FAIL)
+     */
     public static String getProjects(String message, String dbPath) {
         String messageParts[] = message.split(";");
 

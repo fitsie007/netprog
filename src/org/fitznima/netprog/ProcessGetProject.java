@@ -15,6 +15,12 @@ import java.sql.Statement;
  */
 
 public class ProcessGetProject {
+    /**
+     * This method returns the list of tasks associated with a project
+     * @param message the GET_PROJECT command string
+     * @param dbPath the path to the database
+     * @return a string specifying success (OK) if command is valid or otherwise (FAIL)
+     */
     public static String getProject(String message, String dbPath) {
         String messageParts[] = message.split(";");
 
@@ -26,6 +32,8 @@ public class ProcessGetProject {
                 String msg = ProjectConstants.OK + ";" + ProjectConstants.PROJECT_DEFINITION + ";" + project + ";";
                 int count;
                 Connection connection = dbManager.connectToDB();
+
+                //count the list of tasks for the specified project
                 Statement stmt = connection.createStatement();
                 ResultSet rs = stmt.executeQuery("SELECT count(PROJECT_NAME) AS COUNT FROM " +
                         ProjectConstants.TASKS_TABLE + " WHERE PROJECT_NAME='" + project + "';");
@@ -34,6 +42,7 @@ public class ProcessGetProject {
                     msg += ProjectConstants.TASKS_LABEL + ":" + count + "";
                 }
 
+                //get the list of tasks for the specified project
                 rs = stmt.executeQuery("SELECT * FROM " + ProjectConstants.TASKS_TABLE + " WHERE PROJECT_NAME='" + project + "';");
                 while (rs.next()) {
                     String taskName = rs.getString("NAME");

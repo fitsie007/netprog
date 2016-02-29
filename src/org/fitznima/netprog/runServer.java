@@ -23,6 +23,7 @@ public class runServer {
     public static void main(String args[]) {
         String dbPath = null;
         int port = 0;
+        int maxConns = 5;
         int option;
         Connection connection = null;
         Statement stmt = null;
@@ -50,6 +51,7 @@ public class runServer {
             try {
                 if (!dbManager.databaseExists(dbPath)) { //check if database and tables exist
                     connection = dbManager.connectToDB();
+
                     //create tables
                     String projectTableSql = ProjectConstants.CREATE_PROJECT_TABLE_SQL;
                     String taskTableSql = ProjectConstants.CREATE_TASK_TABLE_SQL;
@@ -60,7 +62,7 @@ public class runServer {
                     connection.close();
                 }
 
-                ServerSocket server_sock = new ServerSocket(port, 5);
+                ServerSocket server_sock = new ServerSocket(port, maxConns);
                 System.out.print("Server started on port: " + port);
 
                 for (; ; ) {
