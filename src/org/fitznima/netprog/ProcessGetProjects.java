@@ -16,7 +16,7 @@ import java.sql.Statement;
 
 public class ProcessGetProjects {
     /**
-     * This method returns a the total number of projects and a list of all the projects
+     * This method returns the total number of projects along with a list of names of all the projects in the database.
      * @param message the GET_PROJECTS command string
      * @param dbPath the path to the database
      * @return a string specifying success (OK) if command is valid or otherwise (FAIL)

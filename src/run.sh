@@ -14,6 +14,14 @@ LIB_PATH=$PROJ_PATH"/lib/java-getopt-1.0.14.jar:"$PROJ_PATH"/lib/sqlite-jdbc-3.8
 DB_PATH=$PROJ_PATH"/data/projManagement.db"
 USER_ARGS=""
 
+if [ "$#" = 0 ]
+then
+	echo "Usage: run.sh -p <port> -d <database path>"
+	echo "or run.sh <port> to use default database path ($DB_PATH)"
+	exit 1
+fi
+
+
 if [ "$#" = 1 ] #assuming only the port specified
 then
 	USER_ARGS="-p "$1

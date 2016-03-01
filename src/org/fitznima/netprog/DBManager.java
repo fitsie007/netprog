@@ -5,12 +5,12 @@ import java.sql.Connection;
 import java.sql.DriverManager;
 
 /**
- * Authors: Fitzroy Nembhard & Nima Agli
- * Date: 2/26/2016
- * Professor Marius Silaghi
- * Network Programming CSE5232
+ * Authors: Fitzroy Nembhard & Nima Agli <br>
+ * Date: 2/26/2016 <br>
+ * Professor Marius Silaghi <br>
+ * Network Programming CSE5232 <br>
  *
- * This class provides SQLite Database Management
+ * This class provides functions for SQLite Database Management.
  */
 public class DBManager {
     private String dbPath;
@@ -20,7 +20,7 @@ public class DBManager {
     }
 
     /**
-     * This method attempts to connect to the SQLite database selected
+     * This method attempts to connect to the SQLite database selected.
      * @return a connection to the database
      */
     public Connection connectToDB(){
@@ -35,6 +35,11 @@ public class DBManager {
         return c;
     }
 
+    /**
+     * This method checks if a database exists
+     * @param dbName the path to the database
+     * @return true if database exists, false otherwise
+     */
     public boolean databaseExists(String dbName){
         File file = new File(dbName);
         return file.exists();

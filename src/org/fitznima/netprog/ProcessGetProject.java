@@ -11,12 +11,12 @@ import java.sql.Statement;
  * Professor Marius Silaghi
  * Network Programming CSE5232
  *
- * This class processes the GET_PROJECT command
+ * This class processes the GET_PROJECT command.
  */
 
 public class ProcessGetProject {
     /**
-     * This method returns the list of tasks associated with a project
+     * This method returns the list of tasks associated with a project.
      * @param message the GET_PROJECT command string
      * @param dbPath the path to the database
      * @return a string specifying success (OK) if command is valid or otherwise (FAIL)

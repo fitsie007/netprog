@@ -15,11 +15,10 @@ public class ProjectConstants {
                                             "(PROJECT_NAME        TEXT PRIMARY KEY  NOT NULL)";
 
     public static String CREATE_TASK_TABLE_SQL="CREATE TABLE TASKS " +
-                                        "(TASK_ID               INTEGER PRIMARY KEY     NOT NULL," +
-                                        " NAME                  TEXT                NOT NULL, " +
+                                        "(TASK_ID               INTEGER PRIMARY KEY NOT NULL," +
+                                        " TASK_NAME          TEXT                NOT NULL, " +
                                         " START_TIME            TEXT                NOT NULL, " +
                                         " END_TIME              TEXT                NOT NULL,"+
-                                        " PERSON_RESPONSIBLE    TEXT, " +
                                         " PROJECT_NAME          TEXT                NOT NULL, "+
                                         " OWNER_NAME            TEXT,"+
                                         " OWNER_IP              TEXT,"+

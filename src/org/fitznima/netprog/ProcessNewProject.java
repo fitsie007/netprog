@@ -12,12 +12,12 @@ import java.sql.Statement;
  * Professor Marius Silaghi
  * Network Programming CSE5232
  *
- * This class processes a new project and stores the data in a database
+ * This class processes a new project and stores the data in a database.
  */
 
 public class ProcessNewProject {
     /**
-     * This method adds a new project and a list of tasks to the database
+     * This method adds a new project and a list of tasks to the database.
      * @param message the PROJECT_DEFINITION command string
      * @param dbPath the path to the database
      * @return a string specifying success (OK) if command is valid and successful or otherwise (FAIL)
@@ -73,7 +73,7 @@ public class ProcessNewProject {
                             connection = dbManager.connectToDB();
                             stmt = connection.createStatement();
                             sql = "INSERT INTO " + ProjectConstants.TASKS_TABLE +
-                                    " (NAME, START_TIME, END_TIME, PROJECT_NAME, COMPLETED_FLAG) " +
+                                    " (TASK_NAME, START_TIME, END_TIME, PROJECT_NAME, COMPLETED_FLAG) " +
                                     "VALUES ('" + taskName + "','" +
                                     startTime + "','" +
                                     endTime + "','" +

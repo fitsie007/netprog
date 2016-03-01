@@ -10,10 +10,18 @@ import java.sql.Statement;
  * Professor Marius Silaghi
  * Network Programming CSE5232
  *
- * This class processes the TAKE command
+ * This class processes the TAKE command, which allows a user to complete a project.
  */
 
 public class ProcessTakeCommand {
+    /**
+     * This method assigns a task to the selected user and updates the status of the task in the database.
+     * @param message the TAKE command string
+     * @param dbPath the path to the database
+     * @param IP the IP address of the user
+     * @param port the port on which the user connected
+     * @return an OK message if action was successful or a FAIL message if action failed.
+     */
     public static String take(String message, String dbPath, String IP, int port) {
         String messageParts[] = message.split(";");
         if (messageParts[0].contains(ProjectConstants.TAKE_COMMAND) && messageParts.length == 4) {

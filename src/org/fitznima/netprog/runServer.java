@@ -16,7 +16,7 @@ import java.sql.Statement;
  * Professor Marius Silaghi
  * Network Programming CSE5232
  *
- * This is the main class for running the server
+ * This is the main class for running the server.
  */
 public class runServer {
 

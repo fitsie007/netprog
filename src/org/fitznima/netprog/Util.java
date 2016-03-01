@@ -13,7 +13,7 @@ import java.util.regex.Pattern;
  * Professor Marius Silaghi
  * Network Programming CSE5232
  *
- * This class facilitates auxiliary functions such as date parsing and validation
+ * This class facilitates auxiliary functions such as date parsing and validation.
  */
 public class Util {
 
@@ -27,9 +27,9 @@ public class Util {
 
 
     /**
-     * This method checks if a date string matches the date regex above
+     * This method checks if a date string matches a specified date regular expression.
      * @param dateStr the date string
-     * @return true if date matches date regex above, false otherwise
+     * @return true if date matches date regular expression (regex), false otherwise
      */
     public static boolean isDateValid(String dateStr){
         Pattern datePattern;
