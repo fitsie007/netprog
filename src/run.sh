@@ -25,7 +25,7 @@ fi
 if [ "$#" = 1 ] #assuming only the port specified
 then
 	USER_ARGS="-p "$1
-	USER_ARGS+=" -d "$DB_PATH   
+	USER_ARGS+=" -d "$DB_PATH
 else
 	USER_ARGS=$@ #both port and path supposedly supplied
 fi
