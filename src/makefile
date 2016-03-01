@@ -3,7 +3,7 @@
 #Date: 2/26/2016
 #Professor Marius Silaghi
 #Network Programming (CSE5232)
-#Make file to compile project
+#Makefile to compile project
 ###########################################
 
 
@@ -23,4 +23,4 @@ all: $(classfiles)
 %.class: %.java
 	javac -d . -classpath .:$(lib) $<
 clean:
-	rm -f $(projpath)/*.class $(projpath)/data/*.db
+	rm -f $(projpath)/*.class $(projpath)/constants/*.class $(projpath)/data/*.db

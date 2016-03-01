@@ -83,7 +83,7 @@ public class runServer {
 //
                         //take project command
                         else if (message.contains(ProjectConstants.TAKE_COMMAND)) {
-                            String result = ProcessTakeCommand.take(message, dbPath, server_sock.getInetAddress().getHostAddress(), port);
+                            String result = ProcessTakeCommand.take(message, dbPath, server_sock.getInetAddress().getHostAddress(), server_sock.getLocalPort());
                             out.write(result + "\n");
                             out.flush();
                         }

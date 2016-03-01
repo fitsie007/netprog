@@ -45,7 +45,7 @@ public class ProcessGetProject {
                 //get the list of tasks for the specified project
                 rs = stmt.executeQuery("SELECT * FROM " + ProjectConstants.TASKS_TABLE + " WHERE PROJECT_NAME='" + project + "';");
                 while (rs.next()) {
-                    String taskName = rs.getString("NAME");
+                    String taskName = rs.getString("TASK_NAME");
                     String startDate = rs.getString("START_TIME");
                     String endDate = rs.getString("END_TIME");
                     String ownerName = rs.getString("OWNER_NAME");

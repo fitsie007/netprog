@@ -40,7 +40,7 @@ public class ProcessTakeCommand {
                                 " SET OWNER_NAME = '" + userName + "', " +
                                 " OWNER_IP = '" + IP + "'," +
                                 " OWNER_PORT = " + port + ", " +
-                                " COMPLETED_FLAG = '" + ProjectConstants.COMPLETED_FLAG + "' WHERE NAME='" + task + "' AND PROJECT_NAME='" + project + "';";
+                                " COMPLETED_FLAG = '" + ProjectConstants.COMPLETED_FLAG + "' WHERE TASK_NAME='" + task + "' AND PROJECT_NAME='" + project + "';";
                         stmt.executeUpdate(sql);
                         connection.close();
                         return ProjectConstants.OK + ";" + message;
