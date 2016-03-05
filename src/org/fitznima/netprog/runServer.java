@@ -63,7 +63,7 @@ public class runServer {
                 }
 
                 ServerSocket server_sock = new ServerSocket(port, maxConns);
-                System.out.print("Server started on port: " + port);
+                System.out.print("Server started on port: " + port +"\n");
 
                 for (; ; ) {
 
@@ -105,13 +105,14 @@ public class runServer {
                             out.flush();
                         }
 
-//                    sock.close(); //don't close the socket--> expect infinite messages
+//                    sock.close(); //don't close the socket; let it close on error --> expect infinite messages
                     }
 
                 }
             } catch (IOException e) {
                 System.out.println(e.getMessage());
                 e.printStackTrace();
+
             } catch (SQLException e) {
                 e.printStackTrace();
             }
