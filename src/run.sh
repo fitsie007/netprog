@@ -31,6 +31,6 @@ else
 fi
 
 #Execute Program
-java -cp $MAIN_PATH:$LIB_PATH org.fitznima.netprog.runServer $USER_ARGS
+java -cp $MAIN_PATH:$LIB_PATH org.fitznima.netprog.RunServer $USER_ARGS
 
 ########THE END ###########

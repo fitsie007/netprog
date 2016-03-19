@@ -2,7 +2,11 @@ package org.fitznima.netprog;
 
 import org.fitznima.netprog.constants.ProjectConstants;
 import java.sql.Connection;
+import java.sql.ResultSet;
 import java.sql.Statement;
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 
 /**
  * Authors: Fitzroy Nembhard & Nima Agli
@@ -36,14 +40,31 @@ public class ProcessTakeCommand {
                         Connection connection = dbManager.connectToDB();
                         Statement stmt = connection.createStatement();
 
-                        sql = "UPDATE " + ProjectConstants.TASKS_TABLE +
-                                " SET OWNER_NAME = '" + userName + "', " +
-                                " OWNER_IP = '" + IP + "'," +
-                                " OWNER_PORT = " + port + ", " +
-                                " COMPLETED_FLAG = '" + ProjectConstants.COMPLETED_FLAG + "' WHERE TASK_NAME='" + task + "' AND PROJECT_NAME='" + project + "';";
-                        stmt.executeUpdate(sql);
-                        connection.close();
-                        return ProjectConstants.OK + ";" + message;
+                        String endDateStr;
+
+
+                        ResultSet rs = stmt.executeQuery("SELECT END_TIME FROM " +
+                                ProjectConstants.TASKS_TABLE + " WHERE PROJECT_NAME='" + project +"' AND TASK_NAME='" +task +"';");
+
+                        //get project end-date from database
+                        while (rs.next()) {
+                            endDateStr = rs.getString("END_TIME");
+                            DateFormat df = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss.SSS");
+                            Date endDate = df.parse(Util.formatDate(endDateStr));
+                            Date now = new Date();
+
+                            //make sure project not expired
+                            if (now.equals(endDate)) {
+                                sql = "UPDATE " + ProjectConstants.TASKS_TABLE +
+                                        " SET OWNER_NAME = '" + userName + "', " +
+                                        " OWNER_IP = '" + IP + "'," +
+                                        " OWNER_PORT = " + port + ", " +
+                                        " COMPLETED_FLAG = '" + ProjectConstants.COMPLETED_FLAG + "' WHERE TASK_NAME='" + task + "' AND PROJECT_NAME='" + project + "';";
+                                stmt.executeUpdate(sql);
+                                connection.close();
+                                return ProjectConstants.OK + ";" + message;
+                            }
+                        }
 
                     }
 

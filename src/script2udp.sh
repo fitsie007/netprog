@@ -7,8 +7,8 @@ sleep 1
 #Inform user of example, which will assign a task to a user
 echo "TAKE;USER:Johny;PROJECT:Exam;Buy paper"
 
-#use the sock tool as client to communicate with the server
-sock :3232 <<EOF
+#use the nc tool as client to communicate with the server over UDP
+nc -u localhost 3232 <<EOF
 TAKE;USER:Johny;PROJECT:Exam;Buy paper
 EOF
 

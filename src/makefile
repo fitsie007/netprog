@@ -11,7 +11,7 @@ projpath = org/fitznima/netprog
 lib = $(projpath)/lib/java-getopt-1.0.14.jar
 
 sourcefiles = \
-$(projpath)/runServer.java \
+$(projpath)/RunServer.java \
 
 
 classfiles  = $(sourcefiles:.java=.class)

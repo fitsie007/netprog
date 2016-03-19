@@ -80,20 +80,29 @@ public class Util {
 
     public static boolean isValidDateRange(String startDateStr, String endDateStr){
         DateFormat df = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss.SSS");
+        boolean isvalid = true;
 
         if(isDateValid(startDateStr) && isDateValid(endDateStr)){
             try {
                 Date startDate = df.parse(formatDate(startDateStr));
                 Date endDate = df.parse(formatDate(endDateStr));
+                Date now = new Date();
+//                if(startDate.before(now) || endDate.before(now)) //date range must be after now
+//                    isvalid = false;
 
-                return startDate.before(endDate) || startDate.equals(endDate); //end-date must be >= start-date
+                if( startDate.before(endDate) || startDate.equals(endDate)) //end-date must be >= start-date
+                    isvalid = true;
+                else
+                    isvalid = false;
+
             } catch (ParseException e) {
                 System.out.println(e.getMessage());
                 e.printStackTrace();
                return false;
             }
         }
-        return false;
+        return isvalid;
 
     }
+
 }
