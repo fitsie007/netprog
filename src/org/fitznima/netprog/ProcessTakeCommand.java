@@ -1,9 +1,10 @@
 package org.fitznima.netprog;
 
 import org.fitznima.netprog.constants.ProjectConstants;
+
 import java.sql.Connection;
+import java.sql.PreparedStatement;
 import java.sql.ResultSet;
-import java.sql.Statement;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.Date;
@@ -38,43 +39,54 @@ public class ProcessTakeCommand {
                         String project = messageParts[2].split(":")[1];
                         task = messageParts[3];
                         Connection connection = dbManager.connectToDB();
-                        Statement stmt = connection.createStatement();
-
                         String endDateStr;
 
+                        //Use preparedstatement to sanitize input strings
+                        String queryStr = "SELECT END_TIME FROM " + ProjectConstants.TASKS_TABLE + " WHERE PROJECT_NAME=? AND TASK_NAME=?";
+                        PreparedStatement selectQuery = connection.prepareStatement(queryStr);
+                        selectQuery.setString(1, project);
+                        selectQuery.setString(2, task);
 
-                        ResultSet rs = stmt.executeQuery("SELECT END_TIME FROM " +
-                                ProjectConstants.TASKS_TABLE + " WHERE PROJECT_NAME='" + project +"' AND TASK_NAME='" +task +"';");
+                        ResultSet taskResultSet = selectQuery.executeQuery();
 
                         //get project end-date from database
-                        while (rs.next()) {
-                            endDateStr = rs.getString("END_TIME");
+                        while (taskResultSet.next()) {
+                            endDateStr = taskResultSet.getString("END_TIME");
                             DateFormat df = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss.SSS");
                             Date endDate = df.parse(Util.formatDate(endDateStr));
                             Date now = new Date();
 
-                            //make sure project not expired
-                            if (now.equals(endDate)) {
-                                sql = "UPDATE " + ProjectConstants.TASKS_TABLE +
-                                        " SET OWNER_NAME = '" + userName + "', " +
-                                        " OWNER_IP = '" + IP + "'," +
-                                        " OWNER_PORT = " + port + ", " +
-                                        " COMPLETED_FLAG = '" + ProjectConstants.COMPLETED_FLAG + "' WHERE TASK_NAME='" + task + "' AND PROJECT_NAME='" + project + "';";
-                                stmt.executeUpdate(sql);
+                            //make sure project not expired (ie, time now is after completion)
+                            if (now.after(endDate)) {
+
+                                //use preparedStatement to sanitize input strings
+                                queryStr = "UPDATE " + ProjectConstants.TASKS_TABLE +
+                                        " SET OWNER_NAME=?, OWNER_IP=?, OWNER_PORT=? COMPLETED_FLAG=? WHERE TASK_NAME=? AND PROJECT_NAME=?";
+
+                                PreparedStatement updateProjQuery = connection.prepareStatement(queryStr);
+                                updateProjQuery.setString(1, userName);
+                                updateProjQuery.setString(2, IP);
+                                updateProjQuery.setInt(3, port);
+                                updateProjQuery.setString(4, ProjectConstants.COMPLETED_FLAG);
+                                updateProjQuery.setString(5, task);
+                                updateProjQuery.setString(6, project);
+
+                                int rowsAffected = updateProjQuery.executeUpdate();
+
                                 connection.close();
-                                return ProjectConstants.OK + ";" + message;
+
+                                if (rowsAffected > 0)
+                                    return ProjectConstants.OK + ";" + message;
                             }
                         }
-
+                        connection.close();
                     }
-
-
                 }
             } catch (Exception e) {
                 System.out.println(e.getMessage());
                 e.printStackTrace();
             }
         }
-        return ProjectConstants.FAIL +";" + message;
+        return ProjectConstants.FAIL + ";" + message;
     }
 }

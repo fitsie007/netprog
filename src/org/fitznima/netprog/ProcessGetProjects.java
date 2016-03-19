@@ -27,22 +27,27 @@ public class ProcessGetProjects {
         if (messageParts[0].equals(ProjectConstants.GET_PROJECTS_COMMAND) && messageParts.length == 1) {
             try {
                 DBManager dbManager = new DBManager(dbPath);
-                String msg = ProjectConstants.OK + ";" + ProjectConstants.PROJECTS_LABEL;
+
                 Connection connection = dbManager.connectToDB();
                 Statement stmt = connection.createStatement();
-                ResultSet rs = stmt.executeQuery("SELECT count(PROJECT_NAME) AS COUNT FROM " + ProjectConstants.PROJECTS_TABLE + ";");
-                while (rs.next()) {
-                    int count = rs.getInt("COUNT");
-                    msg += ":" + count;
-                }
+                ResultSet countResultSet = stmt.executeQuery("SELECT count(PROJECT_NAME) AS COUNT FROM " + ProjectConstants.PROJECTS_TABLE + ";");
 
-                rs = stmt.executeQuery("SELECT PROJECT_NAME FROM " + ProjectConstants.PROJECTS_TABLE + ";");
-                while (rs.next()) {
-                    String projectName = rs.getString("PROJECT_NAME");
-                    msg += ";" + projectName;
+                while (countResultSet.next()) {
+                    int count = countResultSet.getInt("COUNT");
+                    if (count > 0) {
+                        String msg = ProjectConstants.OK + ";" + ProjectConstants.PROJECTS_LABEL;
+                        msg += ":" + count;
+
+
+                        ResultSet projList = stmt.executeQuery("SELECT PROJECT_NAME FROM " + ProjectConstants.PROJECTS_TABLE + ";");
+                        while (projList.next()) {
+                            String projectName = projList.getString("PROJECT_NAME");
+                            msg += ";" + projectName;
+                        }
+                        connection.close();
+                        return msg;
+                    }
                 }
-                connection.close();
-                return msg;
 
             } catch (Exception e) {
                 System.out.println(e.getMessage());

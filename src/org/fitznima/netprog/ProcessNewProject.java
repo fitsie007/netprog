@@ -3,8 +3,8 @@ package org.fitznima.netprog;
 import org.fitznima.netprog.constants.ProjectConstants;
 
 import java.sql.Connection;
+import java.sql.PreparedStatement;
 import java.sql.ResultSet;
-import java.sql.Statement;
 
 /**
  * Authors: Fitzroy Nembhard & Nima Agli
@@ -37,55 +37,65 @@ public class ProcessNewProject {
                     DBManager dbManager = new DBManager(dbPath);
                     Connection connection = dbManager.connectToDB();
 
-
                     //use a query to check if this project already defined (if count = 0)
-                    Statement stmt = connection.createStatement();
                     int count = 0;
-                    ResultSet rs = stmt.executeQuery("SELECT count(PROJECT_NAME) AS COUNT FROM " +
-                            ProjectConstants.PROJECTS_TABLE + " WHERE PROJECT_NAME='" +project +"';");
-                    while (rs.next()) {
-                        count = rs.getInt("COUNT");
-                    }
+                    String queryStr = "SELECT count(PROJECT_NAME) AS COUNT FROM " + ProjectConstants.PROJECTS_TABLE + " WHERE PROJECT_NAME=?";
+                    //use preparedStatement to sanitize input strings
+                    PreparedStatement countQuery = connection.prepareStatement(queryStr);
+                    countQuery.setString(1, project);
+                    ResultSet countResultSet = countQuery.executeQuery();
+
+                    while (countResultSet.next()) {
+                        count = countResultSet.getInt("COUNT");
+
+                        if (count == 0) {
+                            //loop and check if all date ranges valid
+                            for (int i = 2; i < numTasks * 3; i += 3) {
+                                String startTime = messageParts[i + 1];
+                                String endTime = messageParts[i + 2];
+
+                                if (!Util.isValidDateRange(startTime, endTime))
+                                    return ProjectConstants.FAIL + ";" + message;
+                            }
+
+                            //Now, insert this project-name into the projects table
+                            queryStr = "INSERT INTO " + ProjectConstants.PROJECTS_TABLE + " (PROJECT_NAME) VALUES(?)";
+                            PreparedStatement insertProjQuery = connection.prepareStatement(queryStr);
+                            insertProjQuery.setString(1, project);
+
+                            int rowsAffected = insertProjQuery.executeUpdate();
+
+                            //if project inserted successfully, then attempt to insert tasks
+                            if(rowsAffected > 0) {
+
+                                //loop and insert the tasks in the tasks table
+                                for (int i = 2; i < numTasks * 3; i += 3) {
+                                    String taskName = messageParts[i];
+                                    String startTime = messageParts[i + 1];
+                                    String endTime = messageParts[i + 2];
+
+                                    queryStr = "INSERT INTO " + ProjectConstants.TASKS_TABLE +
+                                            " (TASK_NAME, START_TIME, END_TIME, PROJECT_NAME, COMPLETED_FLAG) " +
+                                            "VALUES (?,?,?,?,?)";
+
+                                    PreparedStatement insertTaskQuery = connection.prepareStatement(queryStr);
+                                    insertTaskQuery.setString(1, taskName);
+                                    insertTaskQuery.setString(2, startTime);
+                                    insertTaskQuery.setString(3, endTime);
+                                    insertTaskQuery.setString(4, project);
+                                    insertTaskQuery.setString(5, ProjectConstants.PENDING_FLAG);
+
+                                    insertTaskQuery.executeUpdate(); //save task to database
+                                }
+                                connection.close();
+                                return ProjectConstants.OK + ";" + messageParts[0];
+                            }
 
 
-                    if(count == 0) {
-                        //loop and check if all date ranges valid
-                        for (int i = 2; i < numTasks * 3; i += 3) {
-                            String startTime = messageParts[i + 1];
-                            String endTime = messageParts[i + 2];
-
-                            if (!Util.isValidDateRange(startTime, endTime))
-                                return ProjectConstants.FAIL + ";" + message;
                         }
 
-                        //Now, insert this project-name into the projects table
-                        String sql = "INSERT INTO " + ProjectConstants.PROJECTS_TABLE +
-                                " (PROJECT_NAME) VALUES('" + project + "');";
-                        stmt = connection.createStatement();
-                        stmt.executeUpdate(sql);
-
-                        //loop and insert the tasks in the tasks table
-                        for (int i = 2; i < numTasks * 3; i += 3) {
-                            String taskName = messageParts[i];
-                            String startTime = messageParts[i + 1];
-                            String endTime = messageParts[i + 2];
-
-                            connection = dbManager.connectToDB();
-                            stmt = connection.createStatement();
-                            sql = "INSERT INTO " + ProjectConstants.TASKS_TABLE +
-                                    " (TASK_NAME, START_TIME, END_TIME, PROJECT_NAME, COMPLETED_FLAG) " +
-                                    "VALUES ('" + taskName + "','" +
-                                    startTime + "','" +
-                                    endTime + "','" +
-                                    project + "','" + ProjectConstants.PENDING_FLAG + "');";
-                            stmt.executeUpdate(sql); //save task to database
-                        }
-
-                        connection.close();
-                        return ProjectConstants.OK + ";" + messageParts[0];
                     }
-
-
+                    connection.close();
                 }
 
             }
