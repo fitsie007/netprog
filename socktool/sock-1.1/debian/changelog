@@ -1,9 +1,0 @@
-sock (1.1) unstable; urgency=low
-
-  * First debian package.
-
- -- Martin Mares <mj@ucw.cz>  Tue, 12 Jun 2001 14:32:22 +0100
-
-Local variables:
-  mode: debian-changelog
-  End:
