@@ -62,16 +62,17 @@ public class RunServer {
                 }
 
                 //Initialize and start the TCP and UDP threads
-                TCPThread tcpThread = new TCPThread(port, dbPath);
-                UDPThread udpThread = new UDPThread(port, dbPath);
+                TCPServerThread tcpThread = new TCPServerThread(port, dbPath);
+                UDPServerThread udpThread = new UDPServerThread(port, dbPath);
 
                 tcpThread.start();
                 udpThread.start();
 
+                tcpThread.join();
+                udpThread.join();
 
-            } catch (SQLException e) {
-                e.printStackTrace();
-            } catch (SocketException e) {
+
+            } catch (SQLException | SocketException | InterruptedException e) {
                 e.printStackTrace();
             }
         }

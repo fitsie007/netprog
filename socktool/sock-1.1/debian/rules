@@ -1,0 +1,52 @@
+#!/usr/bin/make -f
+# Rules for building of sock Debian/UCW Package
+# (c) 2001 Martin Mares <mj@ucw.cz>
+
+# Uncomment this to turn on verbose mode.
+#export DH_VERBOSE=1
+
+build: build-stamp
+build-stamp:
+	dh_testdir
+	CFLAGS="-O2" ./configure --prefix=/usr
+	$(MAKE)
+	touch build-stamp
+
+clean:
+	dh_testdir
+	dh_testroot
+	rm -f build-stamp
+	$(MAKE) distclean
+	dh_clean
+
+binary-indep: build
+
+binary-arch: build
+	dh_testdir
+	dh_testroot
+	dh_clean -k
+	dh_installdirs usr usr/bin usr/man usr/man/man1
+
+	$(MAKE) prefix=`pwd`/debian/tmp/usr install
+
+#	dh_installdocs
+#	dh_installexamples
+#	dh_installmenu
+#	dh_installinit
+#	dh_installcron
+	dh_installmanpages
+	dh_installchangelogs
+	dh_strip
+#	dh_compress
+	dh_fixperms
+#	dh_suidregister
+	dh_installdeb
+	dh_shlibdeps
+	dh_gencontrol
+#	dh_makeshlibs
+	dh_md5sums
+	dh_builddeb
+
+binary: binary-indep binary-arch
+
+.PHONY: build clean binary-indep binary-arch binary

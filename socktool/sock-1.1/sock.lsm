@@ -1,0 +1,13 @@
+Begin3
+Title:		Shell interface for sockets
+Version:	1.1
+Entered-date:   010612
+Description:    This is a simple utility intended to be an interface between
+		shell scripts (or the command line) and network sockets.
+Keywords:       socket, tcp, udp
+Author:         mj@ucw.cz (Martin Mares)
+Maintained-by:  mj@ucw.cz (Martin Mares)
+Primary-site:   atrey.karlin.mff.cuni.cz pub/local/mj/net/sock-1.1.tar.gz
+Alternate-site: sunsite.unc.edu pub/Linux/utils/shell/sock-1.1.tar.gz
+Copying-policy: GPL
+End

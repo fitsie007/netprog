@@ -1,0 +1,2055 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AnalysisUIOptions">
+    <option name="SCOPE_TYPE" value="8" />
+    <option name="CUSTOM_SCOPE_NAME" value="Module 'netprog'" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="cc4864df-f5c6-440c-8e35-6b2ff74b8919" name="Default" comment="Added task expiration checking, UDP connections, test scripts">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/javaArgumentsProject/argparser/ArgParseException.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/javaArgumentsProject/argparser/ArgParser$NameDesc.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/javaArgumentsProject/argparser/ArgParser$RangeAtom.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/javaArgumentsProject/argparser/ArgParser$RangePnt.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/javaArgumentsProject/argparser/ArgParser$Record.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/javaArgumentsProject/argparser/ArgParser.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/javaArgumentsProject/argparser/ArgParserTest$MErr.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/javaArgumentsProject/argparser/ArgParserTest$MTest.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/javaArgumentsProject/argparser/ArgParserTest$RngCheck.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/javaArgumentsProject/argparser/ArgParserTest.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/javaArgumentsProject/argparser/BooleanHolder.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/javaArgumentsProject/argparser/CharHolder.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/netprog/org/fitznima/netprog/DBManager.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/FitzroyN_NimaA/DOCUMENTATION.pdf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/netprog/DOCUMENTATION.pdf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/javaArgumentsProject/argparser/DoubleHolder.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/FitzroyN_NimaA.tar.bz2" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/javaArgumentsProject/argparser/FloatHolder.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/javaArgumentsProject/javagetopt/GetOptDemo.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/javaArgumentsProject/javagetopt/javagetopt/GetOptDemo.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/javaArgumentsProject/argparser/IntHolder.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/java_getopt_demo/javagetopt/JavaGetOptDemo.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/javaArgumentsProject/argparser/LongHolder.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/javaArgumentsProject/argparser/ObjectHolder.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/netprog/org/fitznima/netprog/ProcessGetProject.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/netprog/org/fitznima/netprog/ProcessGetProjects.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/netprog/org/fitznima/netprog/ProcessNewProject.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/netprog/org/fitznima/netprog/ProcessTakeCommand.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/netprog/org/fitznima/netprog/constants/ProjectConstants.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/netprog/org/fitznima/netprog/RunServer.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/javaArgumentsProject/joptsimple/examples/ShortOptionsTest.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/javaArgumentsProject/argparser/SimpleExample.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/javaArgumentsProject/argparser/StringHolder.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/javaArgumentsProject/argparser/StringScanException.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/javaArgumentsProject/argparser/StringScanner.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/netprog/org/fitznima/netprog/TCPThread.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/javaArgumentsProject/joptsimple/examples/TestRunnerDemo.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/netprog/org/fitznima/netprog/UDPThread.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/netprog/org/fitznima/netprog/Util.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/javaArgumentsProject/cgetopt/a.out" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/po/be.gmo" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/po/bg.gmo" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/po/ca.gmo" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/po/cs.gmo" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/po/da.gmo" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/po/da.po" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/po/de.gmo" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/po/el.gmo" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/po/en_GB.gmo" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/po/eo.gmo" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/po/es.gmo" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/po/et.gmo" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/po/eu.gmo" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/po/fi.gmo" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/po/fr.gmo" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/po/ga.gmo" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/po/ga.po" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/po/gl.gmo" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/po/he.gmo" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/po/he.po" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/po/hr.gmo" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/po/hu.gmo" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/po/id.gmo" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/javaArgumentsProject/doc/argparser/resources/inherit.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/po/it.gmo" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/po/ja.gmo" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/po/ja.po" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/FitzroyN_NimaA/org/fitznima/netprog/lib/java-getopt-1.0.14.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/javaArgumentsProject/java-getopt-1.0.14.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/java_getopt_demo/javagetopt/java-getopt-1.0.14.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/netprog/org/fitznima/netprog/lib/java-getopt-1.0.14.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/javaArgumentsProject/jopt-simple-5.0-beta-1.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/javaArgumentsProject/junit-4.6.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/po/lt.gmo" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/po/nb.gmo" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/po/nb.po" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/po/nl.gmo" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/po/pl.gmo" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/netprog/org/fitznima/netprog/data/projManagement.db" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/po/pt.gmo" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/po/pt_BR.gmo" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/po/ro.gmo" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/po/ro.po" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/po/ru.gmo" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/po/sk.gmo" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/po/sl.gmo" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/po/sl.po" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/sock-1.1.tar.gz" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/sock-1.1/sock" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/sock-1.1/sock.dSYM/Contents/Resources/DWARF/sock" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/FitzroyN_NimaA/org/fitznima/netprog/lib/sqlite-jdbc-3.8.11.2.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/javaArgumentsProject/sqlite-jdbc-3.8.11.2.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/netprog/org/fitznima/netprog/lib/sqlite-jdbc-3.8.11.2.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/po/sr.gmo" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/po/sv.gmo" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/po/tr.gmo" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/po/uk.gmo" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/po/uk.po" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/po/vi.gmo" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15.tar.gz" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/po/zh_CN.gmo" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/po/zh_TW.gmo" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/.name" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/java_getopt_demo/.idea/.name" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/java_getopt_demo/javagetopt/.idea/.name" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/.tarball-version" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/.version" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/m4/00gnulib.m4" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/ABOUT-NLS" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/AUTHORS" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/javaArgumentsProject/doc/argparser/argparser/ArgParseException.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/javaArgumentsProject/argparser/ArgParseException.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/javaArgumentsProject/doc/argparser/argparser/ArgParser.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/javaArgumentsProject/argparser/ArgParser.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/javaArgumentsProject/doc/argparser/argparser/ArgParserTest.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/javaArgumentsProject/argparser/ArgParserTest.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/javaArgumentsProject/doc/argparser/argparser/BooleanHolder.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/javaArgumentsProject/argparser/BooleanHolder.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/COPYING" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/javaArgumentsProject/argparser/COPYRIGHT" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/ChangeLog.README" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/sock-1.1/ChangeLog" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/ChangeLog" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/doc/ChangeLog" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/msdos/ChangeLog" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/src/ChangeLog" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/tests/ChangeLog" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/javaArgumentsProject/doc/argparser/argparser/CharHolder.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/javaArgumentsProject/argparser/CharHolder.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/FitzroyN_NimaA/org/fitznima/netprog/DBManager.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/javaArgumentsProject/doc/argparser/argparser/DoubleHolder.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/javaArgumentsProject/argparser/DoubleHolder.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/tests/FTPServer.pm" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/tests/FTPTest.pm" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/javaArgumentsProject/doc/argparser/argparser/FloatHolder.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/javaArgumentsProject/argparser/FloatHolder.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/GNUmakefile" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/javaArgumentsProject/javagetopt/GetOptDemo.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/tests/HTTPServer.pm" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/tests/HTTPTest.pm" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/INSTALL" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/sock-1.1/sock.dSYM/Contents/Info.plist" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/javaArgumentsProject/doc/argparser/argparser/IntHolder.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/javaArgumentsProject/argparser/IntHolder.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/javaArgumentsProject/javagetopt/JavaGetOptDemo.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/java_getopt_demo/javagetopt/JavaGetOptDemo.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/po/LINGUAS" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/javaArgumentsProject/doc/argparser/argparser/LongHolder.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/javaArgumentsProject/argparser/LongHolder.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/MAILING-LIST" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/msdos/Makefile.DJ" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/msdos/Makefile.WC" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/Makefile.am" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/doc/Makefile.am" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/lib/Makefile.am" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/src/Makefile.am" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/tests/Makefile.am" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/util/Makefile.am" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/po/Makefile.in.in" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/sock-1.1/Makefile.in" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/Makefile.in" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/doc/Makefile.in" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/lib/Makefile.in" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/src/Makefile.in" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/tests/Makefile.in" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/util/Makefile.in" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/sock-1.1/Makefile" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/po/Makevars" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/NEWS" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/javaArgumentsProject/doc/argparser/argparser/ObjectHolder.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/javaArgumentsProject/argparser/ObjectHolder.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/po/POTFILES.in" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/FitzroyN_NimaA/org/fitznima/netprog/ProcessGetProject.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/FitzroyN_NimaA/org/fitznima/netprog/ProcessGetProjects.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/FitzroyN_NimaA/org/fitznima/netprog/ProcessNewProject.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/FitzroyN_NimaA/org/fitznima/netprog/ProcessTakeCommand.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/FitzroyN_NimaA/org/fitznima/netprog/constants/ProjectConstants.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/FitzroyN_NimaA/READ.ME" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/netprog/READ.ME" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/java_getopt_demo/README.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/sock-1.1/README" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/README" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/util/README" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/po/Rules-quot" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/FitzroyN_NimaA/org/fitznima/netprog/RunServer.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/javaArgumentsProject/joptsimple/examples/ShortOptionsTest.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/javaArgumentsProject/doc/argparser/argparser/SimpleExample.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/javaArgumentsProject/argparser/SimpleExample.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/javaArgumentsProject/doc/argparser/argparser/StringHolder.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/javaArgumentsProject/argparser/StringHolder.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/javaArgumentsProject/argparser/StringScanException.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/javaArgumentsProject/argparser/StringScanner.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/tests/Test--httpsonly-r.px" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/tests/Test--no-content-disposition-trivial.px" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/tests/Test--no-content-disposition.px" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/tests/Test--post-file.px" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/tests/Test--spider-fail.px" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/tests/Test--spider-r--no-content-disposition-trivial.px" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/tests/Test--spider-r--no-content-disposition.px" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/tests/Test--spider-r-HTTP-Content-Disposition.px" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/tests/Test--spider-r.px" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/tests/Test--spider.px" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/tests/Test-E-k-K.px" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/tests/Test-E-k.px" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/tests/Test-HTTP-Content-Disposition-1.px" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/tests/Test-HTTP-Content-Disposition-2.px" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/tests/Test-HTTP-Content-Disposition.px" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/tests/Test-N--no-content-disposition-trivial.px" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/tests/Test-N--no-content-disposition.px" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/tests/Test-N-HTTP-Content-Disposition.px" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/tests/Test-N-current.px" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/tests/Test-N-no-info.px" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/tests/Test-N-old.px" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/tests/Test-N-smaller.px" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/tests/Test-N.px" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/tests/Test-O--no-content-disposition-trivial.px" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/tests/Test-O--no-content-disposition.px" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/tests/Test-O-HTTP-Content-Disposition.px" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/tests/Test-O-nc.px" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/tests/Test-O-nonexisting.px" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/tests/Test-O.px" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/tests/Test-Restrict-Lowercase.px" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/tests/Test-Restrict-Uppercase.px" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/tests/Test-auth-basic.px" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/tests/Test-auth-no-challenge-url.px" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/tests/Test-auth-no-challenge.px" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/tests/Test-auth-retcode.px" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/tests/Test-auth-with-content-disposition.px" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/tests/Test-c-full.px" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/tests/Test-c-partial.px" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/tests/Test-c-shorter.px" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/tests/Test-c.px" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/tests/Test-cookies-401.px" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/tests/Test-cookies.px" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/tests/Test-ftp-bad-list.px" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/tests/Test-ftp-iri-disabled.px" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/tests/Test-ftp-iri-fallback.px" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/tests/Test-ftp-iri-recursive.px" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/tests/Test-ftp-iri.px" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/tests/Test-ftp-list-Multinet.px" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/tests/Test-ftp-list-UNIX-hidden.px" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/tests/Test-ftp-list-Unknown-a.px" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/tests/Test-ftp-list-Unknown-hidden.px" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/tests/Test-ftp-list-Unknown-list-a-fails.px" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/tests/Test-ftp-list-Unknown.px" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/tests/Test-ftp-pasv-fail.px" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/tests/Test-ftp-recursive.px" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/tests/Test-ftp.px" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/tests/Test-i-ftp.px" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/tests/Test-i-http.px" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/tests/Test-idn-cmd-utf8.px" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/tests/Test-idn-cmd.px" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/tests/Test-idn-headers.px" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/tests/Test-idn-meta.px" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/tests/Test-idn-robots-utf8.px" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/tests/Test-idn-robots.px" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/tests/Test-iri-disabled.px" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/tests/Test-iri-forced-remote.px" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/tests/Test-iri-list.px" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/tests/Test-iri-percent.px" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/tests/Test-iri.px" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/tests/Test-k.px" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/tests/Test-meta-robots.px" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/tests/Test-nonexisting-quiet.px" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/tests/Test-noop.px" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/tests/Test-np.px" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/tests/Test-proxied-https-auth.px" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/tests/Test-proxy-auth-basic.px" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/tests/Test-restrict-ascii.px" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/tests/Test-stdouterr.px" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/javaArgumentsProject/joptsimple/examples/TestRunnerDemo.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/FitzroyN_NimaA/org/fitznima/netprog/Util.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/tests/WgetFeature.cfg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/tests/WgetFeature.pm" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/tests/WgetTest.pm.in" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/build-aux/snippet/_Noreturn.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/m4/absolute-header.m4" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/lib/accept.c" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/aclocal.m4" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/javaArgumentsProject/doc/argparser/allclasses-frame.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/javaArgumentsProject/doc/argparser/allclasses-noframe.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/lib/alloca.c" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/lib/alloca.in.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/m4/alloca.m4" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/build-aux/announce-gen" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/build-aux/snippet/arg-nonnull.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/lib/arpa_inet.in.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/m4/arpa_inet_h.m4" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/m4/asm-underscore.m4" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/lib/asnprintf.c" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/lib/asprintf.c" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/lib/base32.c" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/lib/base32.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/m4/base32.m4" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/lib/basename-lgpl.c" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/po/be.po" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/po/bg.po" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/lib/binary-io.c" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/lib/binary-io.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/lib/bind.c" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/po/boldquot.sed" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/lib/btowc.c" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/m4/btowc.m4" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/src/build_info.c.in" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/src/build_info.c" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/build-aux/build_info.pl" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/build-aux/snippet/c++defs.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/lib/c-ctype.c" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/lib/c-ctype.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/lib/c-strcase.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/lib/c-strcasecmp.c" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/lib/c-strcaseeq.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/lib/c-strncasecmp.c" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/po/ca.po" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/sock-1.1/debian/changelog" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/m4/clock_time.m4" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/lib/cloexec.c" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/lib/cloexec.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/lib/close.c" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/m4/close.m4" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/src/cmpt.c" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/m4/codeset.m4" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/FitzroyN_NimaA/compile.sh" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/netprog/compile.sh" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/build-aux/compile" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/java_getopt_demo/.idea/compiler.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/java_getopt_demo/javagetopt/.idea/compiler.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/sock-1.1/config.cache" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/lib/config.charset" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/build-aux/config.guess" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/sock-1.1/config.h.in" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/src/config.h.in" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/sock-1.1/config.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/msdos/config.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/sock-1.1/config.log" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/config.log" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/build-aux/config.rpath" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/sock-1.1/config.status" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/build-aux/config.sub" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/m4/configmake.m4" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/configure.ac" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/sock-1.1/configure.in" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/sock-1.1/configure" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/configure" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/lib/connect.c" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/src/connect.c" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/src/connect.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/javaArgumentsProject/doc/argparser/constant-values.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/sock-1.1/debian/control" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/src/convert.c" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/src/convert.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/src/cookies.c" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/src/cookies.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/sock-1.1/debian/copyright" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/po/cs.po" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/src/css-tokens.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/src/css-url.c" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/src/css-url.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/src/css.c" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/src/css.l" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/src/css_.c" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/po/de.po" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/build-aux/depcomp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/javaArgumentsProject/doc/argparser/deprecated-list.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/lib/dirname-lgpl.c" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/lib/dirname.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/m4/dirname.m4" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/lib/dosname.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/m4/double-slash-root.m4" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/lib/dup-safer-flag.c" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/lib/dup-safer.c" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/lib/dup2.c" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/m4/dup2.m4" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/m4/eealloc.m4" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/po/el.po" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/po/en@boldquot.header" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/po/en@quot.header" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/po/en_GB.po" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/m4/environ.m4" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/po/eo.po" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/lib/errno.in.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/m4/errno_h.m4" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/lib/error.c" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/lib/error.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/m4/error.m4" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/po/es.po" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/po/et.po" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/po/eu.po" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/lib/exitfail.c" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/lib/exitfail.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/src/exits.c" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/src/exits.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/m4/exponentd.m4" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/m4/extensions.m4" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/m4/extern-inline.m4" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/lib/fatal-signal.c" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/lib/fatal-signal.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/m4/fatal-signal.m4" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/m4/fcntl-o.m4" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/lib/fcntl.c" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/lib/fcntl.in.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/m4/fcntl.m4" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/m4/fcntl_h.m4" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/lib/fd-hook.c" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/lib/fd-hook.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/lib/fd-safer-flag.c" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/lib/fd-safer.c" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/doc/fdl.texi" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/po/fi.po" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/lib/float+.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/lib/float.c" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/lib/float.in.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/m4/float_h.m4" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/po/fr.po" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/lib/fseek.c" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/m4/fseek.m4" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/lib/fseeko.c" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/m4/fseeko.m4" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/lib/fstat.c" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/m4/fstat.m4" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/lib/ftell.c" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/m4/ftell.m4" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/lib/ftello.c" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/m4/ftello.m4" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/src/ftp-basic.c" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/src/ftp-ls.c" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/src/ftp-opie.c" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/src/ftp.c" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/src/ftp.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/lib/futimens.c" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/m4/futimens.m4" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/lib/gai_strerror.c" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/lib/getaddrinfo.c" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/m4/getaddrinfo.m4" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/lib/getdelim.c" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/m4/getdelim.m4" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/lib/getdtablesize.c" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/m4/getdtablesize.m4" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/lib/getline.c" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/m4/getline.m4" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/javaArgumentsProject/cgetopt/getopt.c" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/lib/getopt.c" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/lib/getopt.in.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/m4/getopt.m4" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/lib/getopt1.c" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/lib/getopt_int.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/javaArgumentsProject/cgetopt/getopt_long.c" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/lib/getpass.c" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/lib/getpass.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/m4/getpass.m4" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/lib/getpeername.c" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/lib/getsockname.c" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/lib/gettext.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/src/gettext.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/m4/gettext.m4" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/lib/gettime.c" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/m4/gettime.m4" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/lib/gettimeofday.c" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/m4/gettimeofday.m4" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/build-aux/git-version-gen" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/m4/gl-openssl.m4" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/po/gl.po" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/lib/gl_openssl.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/m4/glibc21.m4" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/m4/gnulib-common.m4" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/m4/gnulib-comp.m4" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/build-aux/gnupload" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/src/gnutls.c" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/src/hash.c" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/src/hash.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/javaArgumentsProject/doc/argparser/help-doc.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/src/host.c" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/src/host.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/m4/hostent.m4" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/po/hr.po" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/src/html-parse.c" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/src/html-parse.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/src/html-url.c" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/src/html-url.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/src/http-ntlm.c" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/src/http-ntlm.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/src/http.c" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/src/http.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/po/hu.po" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/lib/iconv.in.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/m4/iconv.m4" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/m4/iconv_h.m4" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/po/id.po" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/m4/include_next.m4" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/javaArgumentsProject/doc/argparser/index-all.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/javaArgumentsProject/doc/argparser/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/lib/inet_ntop.c" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/m4/inet_ntop.m4" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/src/init.c" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/src/init.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/po/insert-header.sin" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/sock-1.1/install-sh" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/build-aux/install-sh" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/m4/intlmacosx.m4" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/m4/intmax_t.m4" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/lib/intprops.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/m4/inttypes_h.m4" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/lib/ioctl.c" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/m4/ioctl.m4" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/src/iri.c" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/src/iri.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/po/it.po" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/lib/itold.c" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/java_getopt_1_0_14.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/java_getopt_demo/.idea/libraries/java_getopt_1_0_14.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/java_getopt_demo/javagetopt/.idea/libraries/java_getopt_1_0_14.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/java_getopt_1_0_14__2_.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/java_getopt_demo/java_getopt_demo.iml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/jopt_simple_5_0_beta_1.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/junit_4_6.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/lib/langinfo.in.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/m4/langinfo_h.m4" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/m4/largefile.m4" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/m4/lib-ld.m4" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/m4/lib-link.m4" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/m4/lib-prefix.m4" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/lib/listen.c" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/lib/localcharset.c" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/lib/localcharset.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/m4/localcharset.m4" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/m4/locale-fr.m4" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/m4/locale-ja.m4" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/m4/locale-zh.m4" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/lib/locale.in.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/m4/locale_h.m4" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/lib/localeconv.c" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/m4/localeconv.m4" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/lib/glthread/lock.c" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/lib/glthread/lock.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/m4/lock.m4" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/src/log.c" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/src/log.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/m4/longlong.m4" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/lib/lseek.c" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/m4/lseek.m4" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/lib/lstat.c" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/m4/lstat.m4" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/po/lt.po" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/src/main.c" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/maint.mk" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/FitzroyN_NimaA/makefile" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/netprog/makefile" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/lib/malloc.c" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/m4/malloc.m4" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/lib/mbrtowc.c" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/m4/mbrtowc.m4" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/lib/mbsinit.c" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/m4/mbsinit.m4" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/m4/mbstate_t.m4" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/lib/mbtowc-impl.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/lib/mbtowc.c" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/m4/mbtowc.m4" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/lib/md5.c" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/lib/md5.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/m4/md5.m4" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/build-aux/mdate-sh" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/lib/memchr.c" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/m4/memchr.m4" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/lib/memchr.valgrind" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/java_getopt_demo/.idea/misc.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/java_getopt_demo/javagetopt/.idea/misc.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/build-aux/missing" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/lib/mkdir.c" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/m4/mkdir.m4" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/lib/mkostemp.c" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/m4/mkostemp.m4" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/lib/mkstemp.c" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/m4/mkstemp.m4" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/m4/mmap-anon.m4" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/m4/mode_t.m4" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/java_getopt_demo/.idea/modules.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/java_getopt_demo/javagetopt/.idea/modules.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/lib/msvc-inval.c" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/lib/msvc-inval.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/m4/msvc-inval.m4" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/lib/msvc-nothrow.c" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/lib/msvc-nothrow.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/m4/msvc-nothrow.m4" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/src/mswindows.c" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/src/mswindows.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/m4/multiarch.m4" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/lib/netdb.in.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/m4/netdb_h.m4" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/lib/netinet_in.in.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/m4/netinet_in_h.m4" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/netprog.iml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/src/netrc.c" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/src/netrc.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/po/nl.po" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/lib/nl_langinfo.c" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/m4/nl_langinfo.m4" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/m4/nls.m4" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/m4/nocrash.m4" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/m4/off_t.m4" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/lib/open.c" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/m4/open.m4" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/src/openssl.c" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/src/options.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/javaArgumentsProject/doc/argparser/overview-tree.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/javaArgumentsProject/doc/argparser/argparser/package-frame.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/javaArgumentsProject/doc/argparser/package-list" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/javaArgumentsProject/doc/argparser/argparser/package-summary.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/javaArgumentsProject/doc/argparser/argparser/package-tree.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/javaArgumentsProject/argparser/package.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/javaArgumentsProject/doc/argparser/packages.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/lib/pathmax.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/m4/pathmax.m4" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/lib/pipe-safer.c" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/lib/pipe.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/lib/pipe2-safer.c" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/lib/pipe2.c" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/m4/pipe2.m4" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/po/pl.po" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/m4/po.m4" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/m4/posix_spawn.m4" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/lib/printf-args.c" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/lib/printf-args.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/lib/printf-parse.c" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/lib/printf-parse.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/m4/printf.m4" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/copyright/profiles_settings.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/java_getopt_demo/.idea/copyright/profiles_settings.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/java_getopt_demo/javagetopt/.idea/copyright/profiles_settings.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/src/progress.c" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/src/progress.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/po/pt.po" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/po/pt_BR.po" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/src/ptimer.c" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/src/ptimer.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/po/quot.sed" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/lib/quote.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/m4/quote.m4" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/lib/quotearg.c" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/lib/quotearg.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/m4/quotearg.m4" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/lib/raise.c" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/m4/raise.m4" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/lib/rawmemchr.c" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/m4/rawmemchr.m4" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/lib/rawmemchr.valgrind" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/lib/realloc.c" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/m4/realloc.m4" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/src/recur.c" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/src/recur.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/lib/recv.c" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/lib/ref-add.sin" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/lib/ref-del.sin" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/lib/regcomp.c" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/lib/regex.c" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/lib/regex.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/m4/regex.m4" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/lib/regex_internal.c" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/lib/regex_internal.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/lib/regexec.c" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/po/remove-potcdate.sin" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/src/res.c" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/src/res.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/src/retr.c" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/src/retr.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/util/rmold.pl" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/po/ru.po" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/sock-1.1/debian/rules" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/tests/run-px" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/FitzroyN_NimaA/run.sh" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/netprog/run.sh" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/doc/sample.wgetrc.munged_for_texi_inclusion" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/doc/sample.wgetrc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/lib/sched.in.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/m4/sched_h.m4" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/FitzroyN_NimaA/script1.sh" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/netprog/script1.sh" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/netprog/script1udp.sh" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/FitzroyN_NimaA/script2.sh" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/netprog/script2.sh" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/netprog/script2udp.sh" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/lib/secure_getenv.c" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/m4/secure_getenv.m4" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/lib/select.c" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/m4/select.m4" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/lib/send.c" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/javaArgumentsProject/doc/argparser/serialized-form.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/m4/servent.m4" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/tests/certs/server-cert.pem" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/tests/certs/server-key.pem" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/lib/setsockopt.c" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/lib/sha1.c" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/lib/sha1.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/m4/sha1.m4" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/lib/sig-handler.c" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/lib/sig-handler.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/m4/sig_atomic_t.m4" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/lib/sigaction.c" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/m4/sigaction.m4" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/lib/signal.in.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/m4/signal_h.m4" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/m4/signalblocking.m4" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/m4/sigpipe.m4" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/lib/sigprocmask.c" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/lib/size_max.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/m4/size_max.m4" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/po/sk.po" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/lib/snprintf.c" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/m4/snprintf.m4" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/sock-1.1/sock.1" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/sock-1.1/sock.c" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/sock-1.1/sock.lsm" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/lib/socket.c" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/m4/socketlib.m4" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/lib/sockets.c" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/lib/sockets.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/m4/sockets.m4" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/m4/socklen.m4" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/m4/sockpfaf.m4" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/lib/spawn-pipe.c" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/lib/spawn-pipe.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/m4/spawn-pipe.m4" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/lib/spawn.in.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/lib/spawn_faction_addclose.c" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/lib/spawn_faction_adddup2.c" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/lib/spawn_faction_addopen.c" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/lib/spawn_faction_destroy.c" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/lib/spawn_faction_init.c" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/m4/spawn_h.m4" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/lib/spawn_int.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/lib/spawnattr_destroy.c" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/lib/spawnattr_init.c" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/lib/spawnattr_setflags.c" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/lib/spawnattr_setsigmask.c" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/lib/spawni.c" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/lib/spawnp.c" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/src/spider.c" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/src/spider.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/sqlite_jdbc_3_8_11_2.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/po/sr.po" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/m4/ssize_t.m4" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/src/ssl.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/po/stamp-po" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/doc/stamp-vti" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/lib/stat-time.c" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/lib/stat-time.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/m4/stat-time.m4" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/lib/stat.c" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/m4/stat.m4" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/lib/stdalign.in.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/m4/stdalign.m4" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/lib/stdbool.in.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/m4/stdbool.m4" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/lib/stddef.in.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/m4/stddef_h.m4" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/lib/stdint.in.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/m4/stdint.m4" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/m4/stdint_h.m4" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/lib/stdio-impl.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/lib/stdio-write.c" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/lib/stdio.in.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/m4/stdio_h.m4" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/lib/stdlib.in.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/m4/stdlib_h.m4" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/lib/str-two-way.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/m4/strcase.m4" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/lib/strcasecmp.c" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/lib/strcasestr.c" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/m4/strcasestr.m4" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/lib/strchrnul.c" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/m4/strchrnul.m4" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/lib/strchrnul.valgrind" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/lib/streq.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/lib/strerror-override.c" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/lib/strerror-override.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/lib/strerror.c" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/m4/strerror.m4" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/lib/strerror_r.c" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/m4/strerror_r.m4" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/lib/string.in.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/m4/string_h.m4" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/lib/strings.in.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/m4/strings_h.m4" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/lib/stripslash.c" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/lib/strncasecmp.c" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/lib/strtok_r.c" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/m4/strtok_r.m4" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/javaArgumentsProject/doc/argparser/stylesheet.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/po/sv.po" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/lib/sys_ioctl.in.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/m4/sys_ioctl_h.m4" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/lib/sys_select.in.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/m4/sys_select_h.m4" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/lib/sys_socket.c" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/lib/sys_socket.in.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/m4/sys_socket_h.m4" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/lib/sys_stat.in.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/m4/sys_stat_h.m4" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/lib/sys_time.in.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/m4/sys_time_h.m4" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/lib/sys_types.in.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/m4/sys_types_h.m4" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/lib/sys_uio.in.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/m4/sys_uio_h.m4" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/lib/sys_wait.in.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/m4/sys_wait_h.m4" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/src/sysdep.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/lib/tempname.c" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/lib/tempname.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/m4/tempname.m4" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/src/test.c" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/src/test.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/doc/texi2pod.pl" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/build-aux/texinfo.tex" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/lib/glthread/threadlib.c" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/m4/threadlib.m4" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/lib/time.in.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/m4/time_h.m4" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/lib/timespec.c" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/lib/timespec.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/m4/timespec.m4" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/lib/tmpdir.c" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/lib/tmpdir.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/m4/tmpdir.m4" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/po/tr.po" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/util/trunc.c" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/java_getopt_demo/javagetopt/.idea/uiDesigner.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/lib/unistd--.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/lib/unistd-safer.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/m4/unistd-safer.m4" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/lib/unistd.c" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/lib/unistd.in.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/m4/unistd_h.m4" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/lib/unlocked-io.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/m4/unlocked-io.m4" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/build-aux/update-copyright" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/src/url.c" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/src/url.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/build-aux/useless-if-before-free" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/src/utils.c" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/src/utils.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/m4/utimbuf.m4" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/lib/utimens.c" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/lib/utimens.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/m4/utimens.m4" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/m4/utimes.m4" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/lib/vasnprintf.c" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/lib/vasnprintf.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/m4/vasnprintf.m4" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/lib/vasprintf.c" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/m4/vasprintf.m4" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/build-aux/vc-list-files" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/java_getopt_demo/.idea/vcs.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/java_getopt_demo/javagetopt/.idea/vcs.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/lib/verify.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/doc/version.texi" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/po/vi.po" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/lib/vsnprintf.c" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/m4/vsnprintf.m4" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/lib/w32sock.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/lib/w32spawn.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/lib/wait-process.c" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/lib/wait-process.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/m4/wait-process.m4" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/lib/waitpid.c" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/m4/waitpid.m4" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/src/warc.c" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/src/warc.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/build-aux/snippet/warn-on-use.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/m4/warn-on-use.m4" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/lib/wchar.in.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/m4/wchar_h.m4" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/m4/wchar_t.m4" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/lib/wcrtomb.c" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/m4/wcrtomb.m4" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/lib/wctype-h.c" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/lib/wctype.in.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/m4/wctype_h.m4" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/src/wget.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/doc/wget.info" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/m4/wget.m4" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/po/wget.pot" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/doc/wget.texi" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/m4/wint_t.m4" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/java_getopt_demo/.idea/workspace.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/java_getopt_demo/javagetopt/.idea/workspace.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/lib/write.c" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/m4/write.m4" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/lib/xalloc-die.c" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/lib/xalloc-oversized.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/lib/xalloc.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/m4/xalloc.m4" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/lib/xmalloc.c" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/lib/xsize.c" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/lib/xsize.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/m4/xsize.m4" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/po/zh_CN.po" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socktool/wget-1.15/po/zh_TW.po" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/fitznima/netprog/runServer.java" afterPath="$PROJECT_DIR$/src/org/fitznima/netprog/runServer.java" />
+    </list>
+    <list id="5bd5b2a3-ebec-4dd3-8c5d-7890d79f618d" name="Failed commit: Default" comment="Added code to sanitize SQL queries">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/DOCUMENTATION.pdf" afterPath="$PROJECT_DIR$/src/DOCUMENTATION.pdf" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/fitznima/netprog/ProcessGetProject.java" afterPath="$PROJECT_DIR$/src/org/fitznima/netprog/ProcessGetProject.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/fitznima/netprog/ProcessGetProjects.java" afterPath="$PROJECT_DIR$/src/org/fitznima/netprog/ProcessGetProjects.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/fitznima/netprog/ProcessNewProject.java" afterPath="$PROJECT_DIR$/src/org/fitznima/netprog/ProcessNewProject.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/fitznima/netprog/ProcessTakeCommand.java" afterPath="$PROJECT_DIR$/src/org/fitznima/netprog/ProcessTakeCommand.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/READ.ME" afterPath="$PROJECT_DIR$/src/READ.ME" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/script1udp.sh" afterPath="$PROJECT_DIR$/src/script1udp.sh" />
+    </list>
+    <ignored path="netprog.iws" />
+    <ignored path=".idea/workspace.xml" />
+    <ignored path="$PROJECT_DIR$/out/" />
+    <ignored path=".idea/dataSources.local.xml" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
+  <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/netprog$SimpleExample.coverage" NAME="SimpleExample Coverage Results" MODIFIED="1455045692140" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>argparser.*</FILTER>
+    </SUITE>
+  </component>
+  <component name="CreatePatchCommitExecutor">
+    <option name="PATCH_PATH" value="" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
+  <component name="FavoritesManager">
+    <favorites_list name="netprog" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file leaf-file-name="READ.ME" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/READ.ME">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="3" column="49" selection-start-line="3" selection-start-column="49" selection-end-line="3" selection-end-column="49" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="runServer.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/org/fitznima/netprog/runServer.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="63" column="28" selection-start-line="63" selection-start-column="28" selection-end-line="63" selection-end-column="28" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ProcessTakeCommand.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/org/fitznima/netprog/ProcessTakeCommand.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="58" column="94" selection-start-line="58" selection-start-column="94" selection-end-line="58" selection-end-column="94" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <marker date="1458368269000" expanded="true" signature="1852:1946" placeholder="SELECT END_T..missingValue..." />
+                <marker date="1458368269000" expanded="true" signature="2936:3036" placeholder="UPDATE missi..." />
+                <marker date="1458368269000" expanded="true" signature="2936:3049" placeholder="UPDATE missi..." />
+                <marker date="1458368269000" expanded="true" signature="2936:3062" placeholder="UPDATE missi..." />
+                <marker date="1458368269000" expanded="true" signature="2936:3063" placeholder="UPDATE missi..." />
+                <marker date="1458368269000" expanded="true" signature="2936:3116" placeholder="UPDATE missi..." />
+                <marker date="1458368269000" expanded="true" signature="2936:3117" placeholder="UPDATE missi..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="script2udp.sh" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/script2udp.sh">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="7" column="10" selection-start-line="7" selection-start-column="10" selection-end-line="7" selection-end-column="10" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="script1udp.sh" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/script1udp.sh">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.2991453">
+              <caret line="7" column="83" selection-start-line="7" selection-start-column="83" selection-end-line="7" selection-end-column="83" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ProcessNewProject.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/org/fitznima/netprog/ProcessNewProject.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="97" column="39" selection-start-line="97" selection-start-column="39" selection-end-line="97" selection-end-column="39" />
+              <folding>
+                <marker date="1458366889000" expanded="true" signature="1562:1663" placeholder="SELECT count..." />
+                <marker date="1458366889000" expanded="true" signature="2716:2792" placeholder="INSERT INTO ..." />
+                <marker date="1458366889000" expanded="true" signature="3617:3841" placeholder="INSERT INTO ..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="PREVIOUS_COMMIT_AUTHORS">
+      <list>
+        <option value="Fitzroi" />
+      </list>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GradleLocalSettings">
+    <option name="externalProjectsViewState">
+      <projects_view />
+    </option>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/src/argparser/argparser/SimpleExample.java" />
+        <option value="$PROJECT_DIR$/src/javagetopt/GetOptDemo.java" />
+        <option value="$PROJECT_DIR$/src/joptsimple/examples/ShortOptionsTest.java" />
+        <option value="$PROJECT_DIR$/src/joptsimple/examples/TestRunnerDemo.java" />
+        <option value="$PROJECT_DIR$/src/org/netprog/main/runProjectManager.java" />
+        <option value="$PROJECT_DIR$/src/org/fitznima/netprog/main/runProjectManager.java" />
+        <option value="$PROJECT_DIR$/src/org/fitznima/netprog/Client.java" />
+        <option value="$PROJECT_DIR$/src/org/fitznima/netprog/AddNewProject.java" />
+        <option value="$PROJECT_DIR$/src/org/fitznima/netprog/Server.java" />
+        <option value="$PROJECT_DIR$/src/org/fitznima/netprog/Task.java" />
+        <option value="$PROJECT_DIR$/src/org/fitznima/netprog/DBManager.java" />
+        <option value="$PROJECT_DIR$/src/org/fitznima/netprog/compile.sh" />
+        <option value="$PROJECT_DIR$/src/org/fitznima/netprog/constants/ProjectConstants.java" />
+        <option value="$PROJECT_DIR$/src/compile.sh" />
+        <option value="$PROJECT_DIR$/src/org/fitznima/netprog/runServer.java" />
+        <option value="$PROJECT_DIR$/javaArgumentsProject/javagetopt/JavaGetOptDemo.java" />
+        <option value="$PROJECT_DIR$/src/org/fitznima/netprog/OldrunServer.java" />
+        <option value="$PROJECT_DIR$/src/org/fitznima/netprog/Util.java" />
+        <option value="$PROJECT_DIR$/src/run.sh" />
+        <option value="$PROJECT_DIR$/src/makefile" />
+        <option value="$PROJECT_DIR$/src/script2udp.sh" />
+        <option value="$PROJECT_DIR$/src/script1.sh" />
+        <option value="$PROJECT_DIR$/src/script2.sh" />
+        <option value="$PROJECT_DIR$/src/org/fitznima/netprog/TCPThread.java" />
+        <option value="$PROJECT_DIR$/src/org/fitznima/netprog/UDPThread.java" />
+        <option value="$PROJECT_DIR$/FitzroyN_NimaA/script1.sh" />
+        <option value="$PROJECT_DIR$/FitzroyN_NimaA/script2.sh" />
+        <option value="$PROJECT_DIR$/src/org/fitznima/netprog/RunServer.java" />
+        <option value="$PROJECT_DIR$/src/READ.ME" />
+        <option value="$PROJECT_DIR$/src/org/fitznima/netprog/ProcessGetProjects.java" />
+        <option value="$PROJECT_DIR$/src/org/fitznima/netprog/ProcessNewProject.java" />
+        <option value="$PROJECT_DIR$/src/org/fitznima/netprog/ProcessGetProject.java" />
+        <option value="$PROJECT_DIR$/src/org/fitznima/netprog/ProcessTakeCommand.java" />
+        <option value="$PROJECT_DIR$/src/script1udp.sh" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="Bundled (Maven 3)" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="NamedScopeManager">
+    <order />
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="x" value="23" />
+    <option name="y" value="147" />
+    <option name="width" value="1280" />
+    <option name="height" value="655" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <OptionsSetting value="true" id="Add" />
+    <OptionsSetting value="true" id="Remove" />
+    <OptionsSetting value="true" id="Checkout" />
+    <OptionsSetting value="true" id="Update" />
+    <OptionsSetting value="true" id="Status" />
+    <OptionsSetting value="true" id="Edit" />
+    <ConfirmationsSetting value="0" id="Add" />
+    <ConfirmationsSetting value="0" id="Remove" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+    </navigator>
+    <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scratches" />
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="netprog" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="netprog" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="netprog" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="netprog" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="netprog" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="netprog" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="netprog" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="netprog" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="netprog" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="netprog" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="javaArgumentsProject" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="netprog" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="netprog" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="javaArgumentsProject" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="javagetopt" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="GoToClass.includeLibraries" value="false" />
+    <property name="GoToClass.toSaveIncludeLibraries" value="false" />
+    <property name="GoToFile.includeJavaFiles" value="false" />
+    <property name="MemberChooser.sorted" value="false" />
+    <property name="MemberChooser.showClasses" value="true" />
+    <property name="MemberChooser.copyJavadoc" value="false" />
+    <property name="options.lastSelected" value="gradle.compiler" />
+    <property name="options.splitter.main.proportions" value="0.3" />
+    <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="options.searchVisible" value="true" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src" />
+    <property name="findjar.last.used.dir" value="$PROJECT_DIR$" />
+    <property name="recentsLimit" value="5" />
+    <property name="dynamic.classpath" value="false" />
+    <property name="restartRequiresConfirmation" value="true" />
+    <property name="settings.editor.selected.configurable" value="settings.github" />
+    <property name="settings.editor.splitter.proportion" value="0.2" />
+    <property name="FullScreen" value="false" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src" />
+      <recent name="$PROJECT_DIR$/src/org/fitznima/netprog" />
+      <recent name="$PROJECT_DIR$/javaArgumentsProject/javagetopt" />
+      <recent name="$PROJECT_DIR$/javaArgumentsProject/javagetopt/javagetopt" />
+      <recent name="$PROJECT_DIR$/src/org/fitznima/netprog/lib" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.RunServer">
+    <configuration default="false" name="OldrunServer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="org.fitznima.netprog.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="MAIN_CLASS_NAME" value="org.fitznima.netprog.OldrunServer" />
+      <option name="VM_PARAMETERS" value="" />
+      <option name="PROGRAM_PARAMETERS" value="-p 2323 -d src/org/fitznima/netprog/data/projManagement.db" />
+      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" value="" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="netprog" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="ShortOptionsTest.supportsShortOptions" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="joptsimple.examples.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="netprog" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="joptsimple.examples" />
+      <option name="MAIN_CLASS_NAME" value="joptsimple.examples.ShortOptionsTest" />
+      <option name="METHOD_NAME" value="supportsShortOptions" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="false" name="ShortOptionsTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="joptsimple.examples.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="netprog" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="joptsimple.examples" />
+      <option name="MAIN_CLASS_NAME" value="joptsimple.examples.ShortOptionsTest" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
+      <module name="" />
+      <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
+      <option name="PROGRAM_PARAMETERS" />
+      <method />
+    </configuration>
+    <configuration default="true" type="AndroidRunConfigurationType" factoryName="Android Application">
+      <module name="" />
+      <option name="ACTIVITY_CLASS" value="" />
+      <option name="MODE" value="default_activity" />
+      <option name="DEPLOY" value="true" />
+      <option name="ARTIFACT_NAME" value="" />
+      <option name="TARGET_SELECTION_MODE" value="EMULATOR" />
+      <option name="USE_LAST_SELECTED_DEVICE" value="false" />
+      <option name="PREFERRED_AVD" value="" />
+      <option name="USE_COMMAND_LINE" value="true" />
+      <option name="COMMAND_LINE" value="" />
+      <option name="WIPE_USER_DATA" value="false" />
+      <option name="DISABLE_BOOT_ANIMATION" value="false" />
+      <option name="NETWORK_SPEED" value="full" />
+      <option name="NETWORK_LATENCY" value="none" />
+      <option name="CLEAR_LOGCAT" value="false" />
+      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="true" />
+      <option name="FILTER_LOGCAT_AUTOMATICALLY" value="true" />
+      <method />
+    </configuration>
+    <configuration default="true" type="AndroidTestRunConfigurationType" factoryName="Android Tests">
+      <module name="" />
+      <option name="TESTING_TYPE" value="0" />
+      <option name="INSTRUMENTATION_RUNNER_CLASS" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="TARGET_SELECTION_MODE" value="EMULATOR" />
+      <option name="USE_LAST_SELECTED_DEVICE" value="false" />
+      <option name="PREFERRED_AVD" value="" />
+      <option name="USE_COMMAND_LINE" value="true" />
+      <option name="COMMAND_LINE" value="" />
+      <option name="WIPE_USER_DATA" value="false" />
+      <option name="DISABLE_BOOT_ANIMATION" value="false" />
+      <option name="NETWORK_SPEED" value="full" />
+      <option name="NETWORK_LATENCY" value="none" />
+      <option name="CLEAR_LOGCAT" value="false" />
+      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="true" />
+      <option name="FILTER_LOGCAT_AUTOMATICALLY" value="true" />
+      <method />
+    </configuration>
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <module />
+      <method />
+    </configuration>
+    <configuration default="true" type="Application" factoryName="Application">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="BashConfigurationType" factoryName="Bash">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="INTERPRETER_PATH" value="/bin/bash" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="PARAMETERS" value="" />
+      <module name="" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="myFilePath" />
+      <option name="GLUE" />
+      <option name="myNameFilter" />
+      <option name="myGeneratedName" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="FlashRunConfigurationType" factoryName="Flash App">
+      <option name="BCName" value="" />
+      <option name="IOSSimulatorSdkPath" value="" />
+      <option name="adlOptions" value="" />
+      <option name="airProgramParameters" value="" />
+      <option name="appDescriptorForEmulator" value="Android" />
+      <option name="debugTransport" value="USB" />
+      <option name="debuggerSdkRaw" value="BC SDK" />
+      <option name="emulator" value="NexusOne" />
+      <option name="emulatorAdlOptions" value="" />
+      <option name="fastPackaging" value="true" />
+      <option name="fullScreenHeight" value="0" />
+      <option name="fullScreenWidth" value="0" />
+      <option name="launchUrl" value="false" />
+      <option name="launcherParameters">
+        <LauncherParameters>
+          <option name="browser" value="a7bb68e0-33c0-4d6f-a81a-aac1fdb870c8" />
+          <option name="launcherType" value="OSDefault" />
+          <option name="newPlayerInstance" value="false" />
+          <option name="playerPath" value="/Applications/Flash Player Debugger.app" />
+        </LauncherParameters>
+      </option>
+      <option name="mobileRunTarget" value="Emulator" />
+      <option name="moduleName" value="" />
+      <option name="overriddenMainClass" value="" />
+      <option name="overriddenOutputFileName" value="" />
+      <option name="overrideMainClass" value="false" />
+      <option name="runTrusted" value="true" />
+      <option name="screenDpi" value="0" />
+      <option name="screenHeight" value="0" />
+      <option name="screenWidth" value="0" />
+      <option name="url" value="http://" />
+      <option name="usbDebugPort" value="7936" />
+      <method />
+    </configuration>
+    <configuration default="true" type="FlexUnitRunConfigurationType" factoryName="FlexUnit" appDescriptorForEmulator="Android" class_name="" emulatorAdlOptions="" method_name="" package_name="" scope="Class">
+      <option name="BCName" value="" />
+      <option name="launcherParameters">
+        <LauncherParameters>
+          <option name="browser" value="a7bb68e0-33c0-4d6f-a81a-aac1fdb870c8" />
+          <option name="launcherType" value="OSDefault" />
+          <option name="newPlayerInstance" value="false" />
+          <option name="playerPath" value="/Applications/Flash Player Debugger.app" />
+        </LauncherParameters>
+      </option>
+      <option name="moduleName" value="" />
+      <option name="trusted" value="true" />
+      <method />
+    </configuration>
+    <configuration default="true" type="GradleRunConfiguration" factoryName="Gradle">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list />
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <method />
+    </configuration>
+    <configuration default="true" type="GrailsRunConfigurationType" factoryName="Grails">
+      <module name="" />
+      <setting name="vmparams" value="" />
+      <setting name="cmdLine" value="run-app" />
+      <setting name="depsClasspath" value="false" />
+      <setting name="passParentEnv" value="true" />
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <setting name="launchBrowser" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="JUnit" factoryName="JUnit">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="true" type="JarApplication" factoryName="JAR Application">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
+      <method />
+    </configuration>
+    <configuration default="true" type="Remote" factoryName="Remote">
+      <option name="USE_SOCKET_TRANSPORT" value="true" />
+      <option name="SERVER_MODE" value="false" />
+      <option name="SHMEM_ADDRESS" value="javadebug" />
+      <option name="HOST" value="localhost" />
+      <option name="PORT" value="5005" />
+      <method />
+    </configuration>
+    <configuration default="true" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="TestNG" factoryName="TestNG">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="GROUP_NAME" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="OUTPUT_DIRECTORY" />
+      <option name="ANNOTATION_TYPE" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" />
+      <envs />
+      <properties />
+      <listeners />
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <node-options />
+      <gulpfile />
+      <tasks />
+      <arguments />
+      <pass-parent-envs>true</pass-parent-envs>
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="osgi.bnd.run" factoryName="Run Launcher">
+      <method />
+    </configuration>
+    <configuration default="true" type="osgi.bnd.run" factoryName="Test Launcher (JUnit)">
+      <method />
+    </configuration>
+    <configuration default="false" name="GetoptDemo" type="Application" factoryName="Application" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="MAIN_CLASS_NAME" value="GetoptDemo" />
+      <option name="VM_PARAMETERS" value="" />
+      <option name="PROGRAM_PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" value="" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="netprog" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="RunServer" type="Application" factoryName="Application">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="MAIN_CLASS_NAME" value="org.fitznima.netprog.runServer" />
+      <option name="VM_PARAMETERS" value="" />
+      <option name="PROGRAM_PARAMETERS" value="-p 2323 -d src/org/fitznima/netprog/data/projManagement.db" />
+      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" value="" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="netprog" />
+      <envs />
+      <method />
+    </configuration>
+    <list size="5">
+      <item index="0" class="java.lang.String" itemvalue="Application.GetoptDemo" />
+      <item index="1" class="java.lang.String" itemvalue="Application.RunServer" />
+      <item index="2" class="java.lang.String" itemvalue="Application.OldrunServer" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.ShortOptionsTest.supportsShortOptions" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.ShortOptionsTest" />
+    </list>
+    <recent_temporary>
+      <list size="3">
+        <item index="0" class="java.lang.String" itemvalue="Application.OldrunServer" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.ShortOptionsTest" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.ShortOptionsTest.supportsShortOptions" />
+      </list>
+    </recent_temporary>
+    <configuration name="&lt;template&gt;" type="WebApp" default="true" selected="false">
+      <Host>localhost</Host>
+      <Port>5050</Port>
+    </configuration>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false" />
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="cc4864df-f5c6-440c-8e35-6b2ff74b8919" name="Default" comment="" />
+      <created>1455044660842</created>
+      <option name="number" value="Default" />
+      <updated>1455044660842</updated>
+      <workItem from="1455044663553" duration="6913000" />
+      <workItem from="1456509744258" duration="28597000" />
+      <workItem from="1456557276735" duration="43364000" />
+      <workItem from="1457138146344" duration="38012000" />
+    </task>
+    <task id="LOCAL-00001" summary="Implemented the server code. For now, I'm just printing out the responses. We need to send the results over the socket.">
+      <created>1456556412959</created>
+      <option name="number" value="00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1456556412959</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Refactored the server into smaller classes">
+      <created>1456560617171</created>
+      <option name="number" value="00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1456560617171</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Enabled the socket">
+      <created>1456599527218</created>
+      <option name="number" value="00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1456599527218</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Fixed run.sh and makefile">
+      <created>1456602560421</created>
+      <option name="number" value="00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1456602560421</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Fixed run.sh and makefile">
+      <created>1456603532470</created>
+      <option name="number" value="00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1456603532470</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Set server to accept infinitely many messages">
+      <created>1456619140701</created>
+      <option name="number" value="00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1456619140701</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Added date and date-range validation and project duplication avoidance">
+      <created>1456766807622</created>
+      <option name="number" value="00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1456766807623</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Added date and date-range validation and project duplication avoidance">
+      <created>1456767404225</created>
+      <option name="number" value="00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1456767404225</updated>
+    </task>
+    <task id="LOCAL-00009" summary="modified run.sh and added compile.sh">
+      <created>1456804615996</created>
+      <option name="number" value="00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1456804615996</updated>
+    </task>
+    <task id="LOCAL-00010" summary="modified run.sh and added compile.sh">
+      <created>1456805954611</created>
+      <option name="number" value="00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1456805954611</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Made final changes for submission">
+      <created>1456837615711</created>
+      <option name="number" value="00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1456837615711</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Created test scripts">
+      <created>1457151205569</created>
+      <option name="number" value="00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1457151205569</updated>
+    </task>
+    <task id="LOCAL-00013" summary="Added task expiration checking, UDP connections, test scripts">
+      <created>1458358219107</created>
+      <option name="number" value="00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1458358219107</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="116886000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="23" y="147" width="1280" height="655" extended-state="0" />
+    <editor active="false" />
+    <layout>
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3285968" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39964476" sideWeight="0.51615506" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3268206" sideWeight="0.49676898" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3285968" sideWeight="0.4806139" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3285968" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24959612" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3285968" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39964476" sideWeight="0.4838449" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3296875" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="Vcs.Log.UiProperties">
+    <option name="RECENTLY_FILTERED_USER_GROUPS">
+      <collection />
+    </option>
+    <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+      <collection />
+    </option>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Implemented the server code. For now, I'm just printing out the responses. We need to send the results over the socket." />
+    <MESSAGE value="Refactored the server into smaller classes" />
+    <MESSAGE value="Enabled the socket" />
+    <MESSAGE value="Fixed run.sh and makefile" />
+    <MESSAGE value="Set server to accept infinitely many messages" />
+    <MESSAGE value="Added date and date-range validation and project duplication avoidance" />
+    <MESSAGE value="modified run.sh and added compile.sh" />
+    <MESSAGE value="Made final changes for submission" />
+    <MESSAGE value="Created test scripts" />
+    <MESSAGE value="Added task expiration checking, UDP connections, test scripts" />
+    <MESSAGE value="Added code to sanitize SQL statements" />
+    <MESSAGE value="Added code to sanitize SQL queries" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added code to sanitize SQL queries" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <option name="time" value="4" />
+    </breakpoint-manager>
+    <watches-manager />
+  </component>
+  <component name="antWorkspaceConfiguration">
+    <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
+    <option name="FILTER_TARGETS" value="false" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/org/fitznima/netprog/constants/ProjectConstants.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="29" column="74" selection-start-line="27" selection-start-column="42" selection-end-line="29" selection-end-column="74" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/fitznima/netprog/DBManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="12" column="37" selection-start-line="12" selection-start-column="37" selection-end-line="12" selection-end-column="37" />
+          <folding>
+            <element signature="e#415#416#0" expanded="false" />
+            <element signature="e#451#452#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/compile.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="22" column="28" selection-start-line="22" selection-start-column="28" selection-end-line="22" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/fitznima/netprog/ProcessTakeCommand.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="42" column="104" selection-start-line="42" selection-start-column="104" selection-end-line="42" selection-end-column="104" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <marker date="1458368269000" expanded="true" signature="1852:1946" placeholder="SELECT END_T..missingValue..." />
+            <marker date="1458368269000" expanded="true" signature="2936:3036" placeholder="UPDATE missi..." />
+            <marker date="1458368269000" expanded="true" signature="2936:3049" placeholder="UPDATE missi..." />
+            <marker date="1458368269000" expanded="true" signature="2936:3062" placeholder="UPDATE missi..." />
+            <marker date="1458368269000" expanded="true" signature="2936:3063" placeholder="UPDATE missi..." />
+            <marker date="1458368269000" expanded="true" signature="2936:3116" placeholder="UPDATE missi..." />
+            <marker date="1458368269000" expanded="true" signature="2936:3117" placeholder="UPDATE missi..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/fitznima/netprog/ProcessGetProjects.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="18" column="119" selection-start-line="18" selection-start-column="119" selection-end-line="18" selection-end-column="119" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <marker date="1458363478000" expanded="true" signature="-1:-1" placeholder="SELECT count..." />
+            <marker date="1458363478000" expanded="true" signature="-1:-1" placeholder="SELECT PROJE..missingValue..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_25.jdk/Contents/Home/src.zip!/java/net/URLClassLoader.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.7387387">
+          <caret line="371" column="0" selection-start-line="371" selection-start-column="0" selection-end-line="371" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/javaArgumentsProject/javagetopt/GetOptDemo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/javaArgumentsProject/javagetopt/JavaGetOptDemo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.94017094">
+          <caret line="22" column="52" selection-start-line="22" selection-start-column="52" selection-end-line="22" selection-end-column="52" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/fitznima/netprog/constants/ProjectConstants.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="29" column="74" selection-start-line="27" selection-start-column="42" selection-end-line="29" selection-end-column="74" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/fitznima/netprog/Util.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="86" column="68" selection-start-line="86" selection-start-column="16" selection-end-line="86" selection-end-column="68" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/compile.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="22" column="28" selection-start-line="22" selection-start-column="28" selection-end-line="22" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/makefile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="12" column="15" selection-start-line="12" selection-start-column="15" selection-end-line="12" selection-end-column="15" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/script2.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.64285713">
+          <caret line="15" column="40" selection-start-line="15" selection-start-column="40" selection-end-line="15" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/script1.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.64285713">
+          <caret line="15" column="38" selection-start-line="15" selection-start-column="38" selection-end-line="15" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/run.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="1.4142857">
+          <caret line="33" column="52" selection-start-line="33" selection-start-column="52" selection-end-line="33" selection-end-column="52" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/fitznima/netprog/TCPThread.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.47142857">
+          <caret line="27" column="21" selection-start-line="26" selection-start-column="4" selection-end-line="27" selection-end-column="21" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/fitznima/netprog/UDPThread.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="2.5714285">
+          <caret line="60" column="43" selection-start-line="60" selection-start-column="43" selection-end-line="60" selection-end-column="43" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/fitznima/netprog/DBManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.42857143">
+          <caret line="12" column="37" selection-start-line="12" selection-start-column="37" selection-end-line="12" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/fitznima/netprog/ProcessGetProjects.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="1.7714286">
+          <caret line="49" column="17" selection-start-line="49" selection-start-column="17" selection-end-line="49" selection-end-column="17" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <marker date="1458363478000" expanded="true" signature="-1:-1" placeholder="SELECT count..." />
+            <marker date="1458363478000" expanded="true" signature="-1:-1" placeholder="SELECT PROJE..missingValue..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/fitznima/netprog/runServer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="63" column="28" selection-start-line="63" selection-start-column="28" selection-end-line="63" selection-end-column="28" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/READ.ME">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="3" column="49" selection-start-line="3" selection-start-column="49" selection-end-line="3" selection-end-column="49" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/fitznima/netprog/ProcessGetProject.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="2.0285714">
+          <caret line="72" column="35" selection-start-line="72" selection-start-column="35" selection-end-line="72" selection-end-column="35" />
+          <folding>
+            <marker date="1458366945000" expanded="true" signature="-1:-1" placeholder="SELECT count..." />
+            <marker date="1458366945000" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..missingValue..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/fitznima/netprog/ProcessNewProject.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="97" column="39" selection-start-line="97" selection-start-column="39" selection-end-line="97" selection-end-column="39" />
+          <folding>
+            <marker date="1458366889000" expanded="true" signature="1562:1663" placeholder="SELECT count..." />
+            <marker date="1458366889000" expanded="true" signature="2716:2792" placeholder="INSERT INTO ..." />
+            <marker date="1458366889000" expanded="true" signature="3617:3841" placeholder="INSERT INTO ..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/fitznima/netprog/ProcessTakeCommand.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="58" column="94" selection-start-line="58" selection-start-column="94" selection-end-line="58" selection-end-column="94" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <marker date="1458368269000" expanded="true" signature="1852:1946" placeholder="SELECT END_T..missingValue..." />
+            <marker date="1458368269000" expanded="true" signature="2936:3036" placeholder="UPDATE missi..." />
+            <marker date="1458368269000" expanded="true" signature="2936:3049" placeholder="UPDATE missi..." />
+            <marker date="1458368269000" expanded="true" signature="2936:3062" placeholder="UPDATE missi..." />
+            <marker date="1458368269000" expanded="true" signature="2936:3063" placeholder="UPDATE missi..." />
+            <marker date="1458368269000" expanded="true" signature="2936:3116" placeholder="UPDATE missi..." />
+            <marker date="1458368269000" expanded="true" signature="2936:3117" placeholder="UPDATE missi..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/script2udp.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="7" column="10" selection-start-line="7" selection-start-column="10" selection-end-line="7" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/script1udp.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.2991453">
+          <caret line="7" column="83" selection-start-line="7" selection-start-column="83" selection-end-line="7" selection-end-column="83" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

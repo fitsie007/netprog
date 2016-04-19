@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="java-getopt-1.0.14 (2)">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/src/org/fitznima/netprog/lib/java-getopt-1.0.14.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$PROJECT_DIR$/src/org/fitznima/netprog/lib/java-getopt-1.0.14.jar!/" />
+    </SOURCES>
+  </library>
+</component>

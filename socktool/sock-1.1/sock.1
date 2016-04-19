@@ -1,0 +1,99 @@
+.TH sock 1 "12 June 2001" "sock-1.1" "UCW Utilities"
+.IX sock
+.SH NAME
+sock \- simple socket interface for shell scripts
+.SH SYNOPSIS
+.B sock
+[-dentuvx] ([-b <local>] <remote> | -l <local>) [<command>]
+.SH DESCRIPTION
+.B sock
+is a simple program serving as an interface between its standard input/output
+streams and sockets, primarily intended to be used in shell scripts, but often
+useful interactively from the command line as well.
+
+.B sock
+supports two modes: listening mode and originating mode. In the listening mode
+(requested by the
+.B -l
+option),
+.B sock
+acts as an server and accepts incoming connections for the network address
+specified as
+.B <local>
+(see below for how to write addresses). In the originating mode, you specify
+an address
+.RB ( <remote> )
+to connect to and maybe also the local address
+(\fB-b <local>\fR)
+to bind the local end to.
+
+By default,
+.B sock
+just copies its standard input to the socket and all data received from the socket
+to its standard output. If you want, you can specify a
+.B <command>
+to be spawned and the socket redirected to its standard input/output instead
+(in the listening mode, you can use
+.B -d
+to wait for multiple connections and spawn the command for each of them
+instead of exiting after serving a single incoming connection).
+
+.SH ADDRESSES
+.B sock
+currently supports two address families: IP and UNIX.
+
+For
+.B UNIX
+domain sockets, just use a socket file name as an address.
+
+For
+.B IP (TCP/UDP)
+sockets, addresses look like [\fB<host>\fR][\fB:<port>\fR], where
+\fB<host>\fR is a host name and \fB<port>\fR is a port number or
+a service name. In case you don't specify whether you want to use TCP
+or UDP, sock uses the protocol associated with the specified service
+or falls back to TCP if both are possible. If the host name is omitted,
+"any" (for binding or listening) or "localhost" (for connecting)
+is assumed.
+
+.SH OPTIONS
+.TP
+.B -d
+Run as a daemon and run the
+.B <command>
+for each incoming connection instead of exiting after having served
+a single connection.
+.TP
+.B -e
+Terminate after receiving first EOF in any direction. Default behaviour
+is to wait for EOF in both directions. Please note that this has changed
+since version 1.0.
+.TP
+.B -n
+Avoid reverse DNS lookups in verbose mode.
+.TP
+.B -t
+Open a TCP socket.
+.TP
+.B -u
+Open a UDP socket.
+.TP
+.B -v
+Be verbose. The more -v's you give, the more verbose sock is.
+.TP
+.B -x
+Open a UNIX socket.
+
+.SH EXAMPLES
+Use `sock :smtp' to talk with local mailer.
+
+Use `echo -e "HELO `hostname -f`\\nETRN `hostname -f`" | sock mail.server.name:smtp' to tell
+your mail-exchanger it should start sending all messages queued for you.
+
+Use `sock -dl :7777 fortune' to establish a simple fortune cookie server.
+
+Use `sock -e :7777' as a client for the above server.
+
+.SH AUTHOR
+.B sock
+has been written and is (at least sometimes) maintained by Martin Mares <mj@ucw.cz>.

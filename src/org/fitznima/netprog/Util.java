@@ -105,4 +105,34 @@ public class Util {
 
     }
 
+    /**
+     *
+     * @param startDate
+     * @param endDate
+     * @return
+     */
+    public static boolean isValidDateRange(Date startDate, Date endDate){
+        boolean isvalid;
+        isvalid = startDate.before(endDate) || startDate.equals(endDate);
+        return isvalid;
+    }
+
+    /**
+     *
+     * @param dateStr
+     * @return
+     */
+    public static Date getDate(String dateStr){
+        Date date = null;
+        try {
+            DateFormat df = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss.SSS");
+            date = df.parse(formatDate(dateStr));
+        }
+        catch (ParseException e) {
+            System.out.println(e.getMessage());
+            e.printStackTrace();
+        }
+        return date;
+    }
+
 }

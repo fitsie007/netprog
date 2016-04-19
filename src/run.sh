@@ -9,10 +9,11 @@
 shopt -s nocasematch #force case-insensitive matches
 PROJ_PATH="org/fitznima/netprog"
 MAIN_PATH=.:$PROJ_PATH/:$PROJ_PATH"/"
-LIB_PATH=$PROJ_PATH"/lib/java-getopt-1.0.14.jar:"$PROJ_PATH"/lib/sqlite-jdbc-3.8.11.2.jar"
+#LIB_PATH=$PROJ_PATH"/lib/java-getopt-1.0.14.jar:"$PROJ_PATH"/lib/sqlite-jdbc-3.8.11.2.jar"
+LIB_PATH=$PROJ_PATH"/lib/*"
 
 DB_PATH=$PROJ_PATH"/data/projManagement.db"
-USER_ARGS=""
+USER_ARGS=$@
 
 if [ "$#" = 0 ]
 then

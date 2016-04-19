@@ -10,7 +10,7 @@ package org.fitznima.netprog.constants;
  */
 
 public class ProjectConstants {
-    public static String host="localhost";
+    public static String HOST="localhost";
     public static String CREATE_PROJECT_TABLE_SQL="CREATE TABLE PROJECTS " +
                                             "(PROJECT_NAME        TEXT PRIMARY KEY  NOT NULL)";
 
@@ -58,5 +58,18 @@ public class ProjectConstants {
     public static String PENDING_FLAG ="Waiting";
 
     public static String FAIL ="FAIL";
+
+    public static String USAGE ="Usage: Client -t|-u -p port -c command";
+
+    public static int MAX_PORT = 65535;
+
+    public static int MIN_PORT = 1;
+
+    public static int MAX_CONNECTIONS = 5;
+
+    public static int SUCCESS_CODE = 0;
+
+    public static int FAIL_CODE = -1;
+
 
 }

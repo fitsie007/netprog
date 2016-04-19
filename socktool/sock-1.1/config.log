@@ -1,0 +1,61 @@
+This file contains any messages produced by compilers while
+running configure, to aid debugging if configure makes a mistake.
+
+configure:529: checking for gcc
+configure:642: checking whether the C compiler (gcc  ) works
+configure:658: gcc -o conftest    conftest.c  1>&5
+configure:655:1: warning: type specifier missing, defaults to 'int' [-Wimplicit-int]
+main(){return(0);}
+^
+1 warning generated.
+configure:684: checking whether the C compiler (gcc  ) is a cross-compiler
+configure:689: checking whether we are using GNU C
+configure:698: gcc -E conftest.c
+configure:717: checking whether gcc accepts -g
+configure:749: checking whether warnings should be enabled
+configure:787: checking for a BSD compatible install
+configure:840: checking for gethostbyname in -lresolv
+configure:859: gcc -o conftest -g -O2 -Wall -W -Wno-parentheses -Wstrict-prototypes -Wno-unused   conftest.c -lresolv   1>&5
+configure:887: checking for socket in -lsocket
+configure:906: gcc -o conftest -g -O2 -Wall -W -Wno-parentheses -Wstrict-prototypes -Wno-unused   conftest.c -lsocket  -lresolv  1>&5
+ld: library not found for -lsocket
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+configure: failed program was:
+#line 895 "configure"
+#include "confdefs.h"
+/* Override any gcc2 internal prototype to avoid an error.  */
+/* We use char because int might match the return type of a gcc2
+    builtin and then its argument prototype would still apply.  */
+char socket();
+
+int main() {
+socket()
+; return 0; }
+configure:934: checking for gethostbyname in -lnsl
+configure:953: gcc -o conftest -g -O2 -Wall -W -Wno-parentheses -Wstrict-prototypes -Wno-unused   conftest.c -lnsl  -lresolv  1>&5
+ld: library not found for -lnsl
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+configure: failed program was:
+#line 942 "configure"
+#include "confdefs.h"
+/* Override any gcc2 internal prototype to avoid an error.  */
+/* We use char because int might match the return type of a gcc2
+    builtin and then its argument prototype would still apply.  */
+char gethostbyname();
+
+int main() {
+gethostbyname()
+; return 0; }
+configure:981: checking how to run the C preprocessor
+configure:1002: gcc -E  conftest.c >/dev/null 2>conftest.out
+configure:1061: checking for ANSI C header files
+configure:1074: gcc -E  conftest.c >/dev/null 2>conftest.out
+configure:1141: gcc -o conftest -g -O2 -Wall -W -Wno-parentheses -Wstrict-prototypes -Wno-unused   conftest.c -lresolv  1>&5
+configure:1136:67: warning: implicitly declaring library function 'exit' with type 'void (int) __attribute__((noreturn))'
+if (XOR (islower (i), ISLOWER (i)) || toupper (i) != TOUPPER (i)) exit(2);
+                                                                  ^
+configure:1136:67: note: include the header <stdlib.h> or explicitly provide a declaration for 'exit'
+1 warning generated.
+configure:1165: checking for pid_t
+configure:1198: checking return type of signal handlers
+configure:1220: gcc -c -g -O2 -Wall -W -Wno-parentheses -Wstrict-prototypes -Wno-unused  conftest.c 1>&5
