@@ -6,11 +6,11 @@
 ##### Author: Fitz Roi
 <hr>
 
-######## netprog contains two projects:  
-1. A simple email client ([Browse project code](src/org/fitz/netprog/email)) that uses openssl to connect to an IMAP server and download all emails to the local computer.  
+###### netprog contains two projects:  
+1. A simple Java-based email client ([Browse project code](src/org/fitz/netprog/email)) that uses openssl to connect to an IMAP server and download all emails to the local computer.  
 2. A client/server that sends and receives commands encoded in ASN1. [Browse Project code](src/) or [Read more...](asn1_project.md)
 
-
+<hr>
 
 
 
