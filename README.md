@@ -1,10 +1,17 @@
 # netprog
-#### Network Programming (CSE5232) Project
+#### Network Programming (CSE5232)
 #### Florida Institute of Technology
 ##### Professor Marius Silaghi
-##### Spring 2016 course project
+##### Spring 2016
 ##### Author: Fitz Roi
 <hr>
+
+netprog contains two projects:  
+1. A simple email client ([See it here](../netprog/org/fitz/netprog/email)) that uses openssl to connect to an IMAP server and
+   download all emails to the local computer
+2. A client/server that sends and receives commands encoded in ASN1. ([See it here](../netprog/org/fitz/netprog))
+
+
 Divided in five (5) milestones, this project features a client/server that stores in a sqlite database the set of tasks associated with projects. 
 Each task is associated with a start and an end time as well as a responsible person. 
 The server marks as expired the tasks immediately after they were completed. 
