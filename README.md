@@ -4,6 +4,7 @@
 ##### Professor Marius Silaghi
 ##### Spring 2016 course project
 ##### Author: Fitz Roi
+<hr>
 Divided in five (5) milestones, this project features a client/server that stores in a sqlite database the set of tasks associated with projects. 
 Each task is associated with a start and an end time as well as a responsible person. 
 The server marks as expired the tasks immediately after they were completed. 
@@ -55,7 +56,7 @@ The first task is "Buy paper" starting on **"2015-03-12:18h30m00s001Z"**, i.e., 
 
 ### Compiling and Executing
 To compile the project, run *./compile.sh*  
-To clean the class files, run **./compile.sh -c*  
+To clean the class files, run *./compile.sh -c*  
 To run the server, run *./run.sh 2323*, where 2323 represents a port
 
 The following are test examples for the client:    
@@ -65,5 +66,7 @@ The following are test examples for the client:
 ./client.sh 192.168.2.48 2323 "GET_PROJECTS"  
 ./client.sh 192.168.2.48 2323 "REGISTER;Exam"  
 ./client.sh 192.168.2.48 2323 "LEAVE;Exam"  
+
+<hr>
 
 
