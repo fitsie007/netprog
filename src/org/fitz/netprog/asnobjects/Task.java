@@ -1,9 +1,10 @@
-package org.fitznima.netprog;
+package org.fitz.netprog.asnobjects;
 
 import net.ddp2p.ASN1.ASN1DecoderFail;
 import net.ddp2p.ASN1.ASNObj;
 import net.ddp2p.ASN1.Decoder;
 import net.ddp2p.ASN1.Encoder;
+import org.fitz.netprog.Util;
 
 import java.util.Date;
 
@@ -64,7 +65,7 @@ public class Task extends ASNObj {
         enc.addToSequence(new Encoder(ip).setASN1Type(Encoder.TAG_UTF8String));
         enc.addToSequence(new Encoder(port).setASN1Type(Encoder.TAG_INTEGER));
         enc.addToSequence(new Encoder(done).setASN1Type(Encoder.TAG_BOOLEAN));
-        return enc.setASN1Type(Encoder.TAG_SEQUENCE);
+        return enc.setASN1Type(ProjectTags.TYPE_TASK);
     }
 
     @Override

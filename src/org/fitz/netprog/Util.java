@@ -1,5 +1,8 @@
-package org.fitznima.netprog;
+package org.fitz.netprog;
 
+import java.net.InetAddress;
+import java.net.InetSocketAddress;
+import java.net.SocketAddress;
 import java.text.DateFormat;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
@@ -8,7 +11,7 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 /**
- * Authors: Fitzroy Nembhard & Nima Agli
+ * Author: Fitzroy Nembhard
  * Date: 2/29/2016
  * Professor Marius Silaghi
  * Network Programming CSE5232
@@ -106,7 +109,7 @@ public class Util {
     }
 
     /**
-     *
+     * This method checks if two date ranges are valid
      * @param startDate
      * @param endDate
      * @return
@@ -118,7 +121,8 @@ public class Util {
     }
 
     /**
-     *
+     * This method parses a date string based on the format
+     * 2016-03-15:18h30m00s001Z
      * @param dateStr
      * @return
      */
@@ -133,6 +137,72 @@ public class Util {
             e.printStackTrace();
         }
         return date;
+    }
+
+
+    /**
+     * This method parses a date string so it can be saved in an SQLite database
+     * @param dateStr the date string
+     * @return a Date
+     */
+    public static Date dbFormatDateStr(String dateStr){
+        Date date = null;
+        DateFormat df = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss.SSS");
+        try {
+
+            date = df.parse(dateStr);
+        }
+        catch (ParseException e) {
+            System.out.println(e.getMessage());
+            e.printStackTrace();
+        }
+        return date;
+    }
+
+    /**
+     * This method formats a date into the specified format
+     * @param date
+     * @return
+     */
+    public static String dbFormatDate(Date date){
+        DateFormat df = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss.SSS");
+        return df.format(date);
+    }
+
+    public static Date parseDateStr(String dateStr){
+        Date date = null;
+        try {
+//            DateFormat df = new SimpleDateFormat("EEE MMM dd HH:mm:ss z yyyy"); format "Sat Mar 12 18:30:00 EST 2016"
+            DateFormat df = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss.SSS");
+            date = df.parse(dateStr);
+        }
+        catch (ParseException e) {
+            System.out.println(e.getMessage());
+            e.printStackTrace();
+        }
+        return date;
+    }
+
+    /**
+     * This method retrieves the IP address from a socketAddress
+     * usually in the format /192.168.2.1:2655
+     * @param socketAddress
+     * @return an IP string; eg: 192.168.2.1
+     */
+    public static  String parseIPAddress(SocketAddress socketAddress){
+        InetSocketAddress inetAddress = (InetSocketAddress) socketAddress;
+        InetAddress ipAddress = inetAddress.getAddress();
+        return ipAddress.toString().replace("/","");
+    }
+
+    /**
+     * This method retrieves the IP address from a string
+     * usually in the format /192.168.2.1
+     * @param ipAddress
+     * @return an IP string; eg: 192.168.2.1
+     */
+    public static  String parseIPAddress(String ipAddress){
+        return ipAddress.replace("/","");
     }
 
 }

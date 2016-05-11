@@ -1,4 +1,4 @@
-package org.fitznima.netprog;
+package org.fitz.netprog.asnobjects;
 
 import net.ddp2p.ASN1.ASN1DecoderFail;
 import net.ddp2p.ASN1.ASNObj;
@@ -31,21 +31,23 @@ public class ProjectsAnswer extends ASNObj {
     @Override
     public Encoder getEncoder() {
         final Encoder enc = new Encoder().initSequence(); // creates SEQUENCE
-        enc.addToSequence(Encoder.getEncoder(projects).setASN1Type(Encoder.TAG_SEQUENCE));
-        return enc.setASN1Type(Encoder.TAG_SEQUENCE);
+        enc.addToSequence(Encoder.getEncoder(projects).setASN1Type(ProjectTags.TYPE_PROJECT));
+        return enc.setASN1Type(ProjectTags.TYPE_PROJECTS_ANSWER);
     }
 
     @Override
     public ProjectsAnswer decode(final Decoder dec) throws ASN1DecoderFail {
         final Decoder decoder = dec.getContent(); // remove the SEQUENCE envelope
+        ArrayList<Project> decProjects = new ArrayList<>();
+
         try {
-            projects = decoder.getSequenceOfAL(dec.getTypeByte(), new Project());
+             decProjects = decoder.getSequenceOfAL(ProjectTags.TYPE_PROJECT, new Project());
         } catch (Exception e) {
             e.printStackTrace();
         }
 
 //        if (dec.getTypeByte() != 0) throw new ASN1DecoderFail("Extra objects!");
-        return new ProjectsAnswer(projects);
+        return new ProjectsAnswer(decProjects);
     }
 
     /**

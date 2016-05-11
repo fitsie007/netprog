@@ -1,5 +1,5 @@
 ###########################################
-#Author: Fitzroy Nembhard & Nima Agli
+#Author: Fitzroy Nembhard
 #Date: 2/26/2016
 #Professor Marius Silaghi
 #Network Programming (CSE5232)
@@ -7,7 +7,7 @@
 ###########################################
 
 
-projpath = org/fitznima/netprog
+projpath = org/fitz/netprog
 lib = $(projpath)/lib/*
 
 sourcefiles = \
@@ -24,4 +24,4 @@ all: $(classfiles)
 %.class: %.java
 	javac -d . -classpath .:$(lib) $<
 clean:
-	rm -f $(projpath)/*.class $(projpath)/constants/*.class $(projpath)/data/*.db
+	rm -f $(projpath)/*.class $(projpath)/constants/*.class $(projpath)/data/*.db $(projpath)/asnobjects/*.class

@@ -1,4 +1,4 @@
-package org.fitznima.netprog;
+package org.fitz.netprog.asnobjects;
 
 import net.ddp2p.ASN1.ASN1DecoderFail;
 import net.ddp2p.ASN1.ASNObj;
@@ -36,7 +36,7 @@ public class Take extends ASNObj {
         enc.addToSequence(new Encoder(userName).setASN1Type(Encoder.TAG_UTF8String));
         enc.addToSequence(new Encoder(projectName).setASN1Type(Encoder.TAG_UTF8String));
         enc.addToSequence(new Encoder(taskName).setASN1Type(Encoder.TAG_UTF8String));
-        return enc.setASN1Type(Encoder.TAG_SEQUENCE);
+        return enc.setASN1Type(ProjectTags.TYPE_TAKE);
     }
 
     @Override

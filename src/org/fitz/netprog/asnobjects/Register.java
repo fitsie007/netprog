@@ -1,4 +1,4 @@
-package org.fitznima.netprog;
+package org.fitz.netprog.asnobjects;
 
 import net.ddp2p.ASN1.ASN1DecoderFail;
 import net.ddp2p.ASN1.ASNObj;
@@ -8,17 +8,17 @@ import net.ddp2p.ASN1.Encoder;
 /**
  * This class facilitates the encoding/decoding of a
  * message using ASN1 of the format:
- * ProjectOK ::= [0] SEQUENCE {code INTEGER}
+ * Register ::= [13] SEQUENCE {project UTF8String}
  * Created by FitzRoi on 4/7/16.
  */
-public class ProjectOK extends ASNObj {
-    private int code = -1;
+public class Register extends ASNObj {
+    private String project;
 
 
-    public ProjectOK() {}
+    public Register() {}
 
-    public ProjectOK(int code) {
-        this.code = code;
+    public Register(String project) {
+        this.project = project;
     }
 
     @Override
@@ -29,16 +29,16 @@ public class ProjectOK extends ASNObj {
     @Override
     public Encoder getEncoder() {
         final Encoder enc = new Encoder().initSequence(); // creates SEQUENCE
-        enc.addToSequence(new Encoder(code).setASN1Type(Encoder.TAG_INTEGER));
-        return enc.setASN1Type(Encoder.TAG_SEQUENCE);
+        enc.addToSequence(new Encoder(project).setASN1Type(Encoder.TAG_UTF8String));
+        return enc.setASN1Type(ProjectTags.TYPE_REGISTER);
     }
 
     @Override
-    public ProjectOK decode(final Decoder dec) throws ASN1DecoderFail  {
+    public Register decode(final Decoder dec) throws ASN1DecoderFail  {
         final Decoder decoder = dec.getContent(); // remove the SEQUENCE envelope
-        final int code = decoder.getFirstObject(true).getInteger(Encoder.TAG_INTEGER).intValue();
+        final String project = decoder.getFirstObject(true).getString(Encoder.TAG_UTF8String);
 //        if (dec.getTypeByte() != 0) throw new ASN1DecoderFail("Extra objects!");
-        return new ProjectOK(code);
+        return new Register(project);
     }
 
     /**
@@ -46,11 +46,11 @@ public class ProjectOK extends ASNObj {
      */
     @Override
     public ASNObj instance() throws CloneNotSupportedException {
-        return new ProjectOK();
+        return new Register();
     }
 
 
-    public int getCode() {
-        return code;
+    public String getProject() {
+        return project;
     }
 }

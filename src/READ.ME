@@ -6,14 +6,26 @@
 #                           4/9/2016                            #
 #################################################################
 
-Contributors:
-=============
+Author: Fitzroy Nembhard
 
-Fitzroy Nembhard
-Nima Aghli
-=============
+To use test scripts:
+first compile with
+     ./compile.sh
+Then run
+ ./scriptASN_TCP.sh
+ or
+  .scriptANS_UDP.sh
 
+======================================================================================
+Note: Project Definition may fail after running one script after another
+since the first script would have already inserted the data  into the database.
+Also if localhost is used, this may throw an error when attemping to getName/ip of host
+======================================================================================
+
+To run server ./run.sh port
+To run client ./client.sh host port "command" <optional -t or -u>
 See documentation file for more information (DOCUMENTATION.pdf)
+
 
 Components in this Package
 ==========================

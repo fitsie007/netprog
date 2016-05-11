@@ -1,6 +1,6 @@
 #!/bin/bash
 ###########################################
-#Author: Fitzroy Nembhard & Nima Agli
+#Author: Fitzroy Nembhard
 #Date: 2/29/2016
 #Professor Marius Silaghi
 #Network Programming CSE5232

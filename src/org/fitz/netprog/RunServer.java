@@ -1,7 +1,7 @@
-package org.fitznima.netprog;
+package org.fitz.netprog;
 
 import gnu.getopt.Getopt;
-import org.fitznima.netprog.constants.ProjectConstants;
+import org.fitz.netprog.constants.ProjectConstants;
 
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
@@ -11,7 +11,7 @@ import java.sql.SQLException;
 import java.sql.Statement;
 
 /**
- * Authors: Fitzroy Nembhard & Nima Agli
+ * Author: Fitzroy Nembhard
  * Date: 3/18/16
  * Professor Marius Silaghi
  * Network Programming CSE5232
@@ -23,11 +23,10 @@ public class RunServer {
         String dbPath = null;
         int port = 0;
         int option;
-        Connection connection = null;
-        Statement stmt = null;
+        Connection connection;
+        Statement stmt;
         BufferedWriter out;
         BufferedReader reader;
-        String message = "";
 
         //use GNU Java GetOpt to process command line options
         Getopt g = new Getopt("server", args, "p:d:");
@@ -54,9 +53,11 @@ public class RunServer {
                     //create tables if they do not exist
                     String projectTableSql = ProjectConstants.CREATE_PROJECT_TABLE_SQL;
                     String taskTableSql = ProjectConstants.CREATE_TASK_TABLE_SQL;
+                    String registrationTableSql = ProjectConstants.CREATE_REGISTRATION_TABLE_SQL;
                     stmt = connection.createStatement();
                     stmt.executeUpdate(projectTableSql);
                     stmt.executeUpdate(taskTableSql);
+                    stmt.executeUpdate(registrationTableSql);
                     stmt.close();
                     connection.close();
                 }

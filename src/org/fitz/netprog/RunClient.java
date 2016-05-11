@@ -1,12 +1,12 @@
-package org.fitznima.netprog;
+package org.fitz.netprog;
 
 import gnu.getopt.Getopt;
-import org.fitznima.netprog.constants.ProjectConstants;
+import org.fitz.netprog.constants.ProjectConstants;
 
 import java.net.SocketException;
 
 /**
- * This class runs the client
+ * This class runs the TCP/UDP client
  * Created by FitzRoi on 4/7/16.
  */
 public class RunClient {
@@ -20,24 +20,24 @@ public class RunClient {
         String response;
 
         //use GNU Java GetOpt to process command line options
-        Getopt g = new Getopt("server", args, "p:s:ut:c:");
+        Getopt g = new Getopt("server", args, "p:d:ut:c:");
         g.setOpterr(false);
 
         while ((option = g.getopt()) != -1)
             switch (option) {
-                case 'p':
+                case 'p': //port
                     port = Integer.parseInt(g.getOptarg());
                     break;
-                case 's':
+                case 'd': //domain/host
                     host = g.getOptarg();
                     break;
-                case 't':
+                case 't': //tcp flag
                     useTCP = true;
                     break;
-                case 'u':
+                case 'u': //udp flag
                     useTCP = false;
                     break;
-                case 'c':
+                case 'c': //string command
                    command = g.getOptarg();
                     break;
             }
