@@ -7,9 +7,9 @@
 <hr>
 
 netprog contains two projects:  
-1. A simple email client ([See it here](src/org/fitz.netprog/email)) that uses openssl to connect to an IMAP server and
+1. A simple email client ([See it here](src/org/fitz/netprog/email)) that uses openssl to connect to an IMAP server and
    download all emails to the local computer
-2. A client/server that sends and receives commands encoded in ASN1. ([See it here](src/org/fitz/netprog))
+2. A client/server that sends and receives commands encoded in ASN1. ([See it here](src/))
 
 
 Divided in five (5) milestones, this project features a client/server that stores in a sqlite database the set of tasks associated with projects. 
